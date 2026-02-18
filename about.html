@@ -1,361 +1,284 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
-  <meta name="author" content="" />
-  <title>N1 Healthcare Ltd</title>
-
-  <!--fav icon-->
-  <link rel="shortcut icon" href="images/fav_icon.png" type="image/x-icon" />
-  <!-- Default links -->
-  <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-
-  <!-- google font -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
-    rel="stylesheet">
-
-  <!--Plugin Css-->
-  <link href="css/slick.css" rel="stylesheet" type="text/css" />
-  <link href="css/slick-theme.css" rel="stylesheet" type="text/css" />
-
-  <!-- custom links -->
-  <link href="css/fonts.css" rel="stylesheet" type="text/css" />
-  <link href="css/custom.css" rel="stylesheet" type="text/css" />
-  <link href="css/responsive.css" rel="stylesheet" type="text/css" />
-  <link href="css/developer.css" rel="stylesheet" type="text/css" />
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-PWJG9QEDTP"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-PWJG9QEDTP');
-</script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About — N1 Healthcare</title>
+  <meta name="description" content="N1 Healthcare is a cross-disciplinary team of clinicians, data scientists, AI engineers, and health optimisation experts building AI-powered clinical intelligence.">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <meta property="og:title" content="About — N1 Healthcare">
+  <meta property="og:description" content="A cross-disciplinary team building AI-powered clinical health intelligence.">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="N1 Healthcare">
+  <link rel="stylesheet" href="styles.css">
 </head>
+<body>
 
-<body class="about_page">
-  <!-- Header start -->
-  <header class="hedr">
+  <!-- Nav -->
+  <nav class="nav nav-transparent">
+    <div class="container nav-inner">
+      <a href="index.html" class="nav-logo"><img src="images/n1-logo.png" alt="N1 Healthcare"></a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="how-it-works.html">How It Works</a>
+        <a href="health-report.html">Reports</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="about.html">About</a>
+        <a href="https://app.n1.care" class="btn btn-primary">Get Started</a>
+      </div>
+      <button class="nav-toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <section class="subpage-header subpage-header--about">
+    <div class="subpage-wave subpage-wave--1"></div>
+    <div class="subpage-wave subpage-wave--2"></div>
     <div class="container">
-      <nav class="navbar">
-        <a href="index.html" class="navbar_brand">
-          <img src="images/logo.png" alt="">
-        </a>
-        <div class="navmenumain">
-          <ul class="nav_menu">
-            <li class="nav_item active">
-              <a href="about.html" class="nav_link">
-                About Us
-              </a>
-            </li>
-            <li class="nav_item">
-              <a href="services.html" class="nav_link">
-                Our Services
-              </a>
-            </li>
-            <li class="nav_item">
-              <a href="health_report.html" class="nav_link">
-                The Health Report
-              </a>
-            </li>
-            <li class="nav_item">
-              <a href="our_team.html" class="nav_link">
-                Our Team
-              </a>
-            </li>
-            <li class="nav_item">
-              <a href="faq.html" class="nav_link">
-                FAQ
-              </a>
-            </li>
-          </ul>
-
-          <button type="button" class="d-inline-block d-lg-none nav_togge_btn" id="nav_togge_btn"
-            onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))"
-            aria-label="Main Menu">
-            <svg width="37" height="37" viewBox="0 0 100 100">
-              <path class="line line1"
-                d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
-              <path class="line line2" d="M 20,50 H 80" />
-              <path class="line line3"
-                d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
-            </svg>
-          </button>
-        </div>
-        <a href="mailto:longevity@n1.healthcare" class="loginbtn">
-          Contact us
-        </a>
-      </nav>
-    </div>
-  </header>
-  <!-- Header end -->
-
-  <!-- banner start -->
-  <section class="abt_bnr">
-    <img src="images/abt_bnr.png" alt="" class="bnr_img">
-    <div class="abso_abt_bnr">
-      <div class="container">
-        <div class="abt_bnr_txt">
-          <h1>About Us</h1>
-        </div>
-      </div>
+      <span class="section-label reveal">About N1</span>
+      <h1 class="reveal">Cross-disciplinary.<br>Science-driven.</h1>
+      <p class="reveal">We are passionate about precision health, and we believe the best medicine is proactive, not reactive.</p>
     </div>
   </section>
-  <!-- banner end -->
 
-  <!-- our mission sec -->
-  <section class="our_mission" style=" background-image: url(images/our_mission_bg.png);">
-    <div class="our_mission_cont">
-      <div class="container">
-        <div class="mission_txt_wrp">
-          <div class="our_miss_left_cont our_misson_txt_cont">
-            <div class="misson_icon">
-              <img src="images/abt_icon1.png" alt="">
-            </div>
-            <h3>Our Mission</h3>
-            <p>At N1 Healthcare, our mission is to transform healthcare delivery by providing in-depth, personalized
-              health insights that empower individuals to take proactive steps towards enhancing their well-being and
-              longevity. We strive to be at the forefront of the personalized healthcare revolution, setting new
-              standards for precision and care in the industry.</p>
-          </div>
-
-          <div class="our_miss_right_cont our_misson_txt_cont">
-            <div class="misson_icon">
-              <img src="images/abt_icon2.png" alt="">
-            </div>
-            <h3>Our Vision</h3>
-            <p>We envision a world where healthcare is not just reactive but proactive, tailored to each individual's
-              unique genetic makeup, lifestyle, and health history. Our vision is to make personalized healthcare
-              accessible to those who value a deeper understanding of their health and seek to actively manage it for
-              a
-              longer, healthier life.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- our mission sec -->
-
-  <!-- feature sec -->
-  <section class="feature_sec">
-    <div class="feature_wev"><img src="images/abt_wev.png" alt=""></div>
-    <div class="fea_inr_cont">
-      <div class="container">
-        <div class="fea_hdr_txt">
-          <h3>Welcome to a trailblazer in the realm of personalized healthcare services</h3>
-          <h2>Founded by the visionary duo, Jean Yves Sireau and Nick Sireau, our company is built on the groundbreaking
-            concept of providing highly customized and comprehensive health reports to our esteemed clients. Our journey
-            began with a simple yet profound idea: to revolutionize the way individuals perceive and manage their
-            health.
-          </h2>
-        </div>
-
-        <div class="feature_wrp">
-          <div class="feature_row">
-            <div class="fea_txt">
-              <h2>Innovative Approach to Healthcare</h2>
-              <p>We differentiate ourselves by offering a service that goes beyond the traditional scope of medical
-                care. Our comprehensive health reports are meticulously crafted, encompassing everything from a thorough
-                analysis of family medical history and DNA sequencing to a detailed examination of lifestyle, nutrition,
-                and all past and present medical tests. This holistic approach ensures a complete understanding of our
-                clients' health profiles.</p>
-            </div>
-            <div class="fea_icon">
-              <div class="feat_icon_cir">
-                <img src="images/feat_icon_1.png" alt="">
-              </div>
-            </div>
-            <div class="fea_img">
-              <img src="images/feat_img.png" alt="">
-            </div>
-          </div>
-
-          <div class="feature_row">
-            <div class="fea_txt">
-              <h2>Global Team of Experts</h2>
-              <p>Our strength lies in our diverse team of highly skilled technical writers and specialized clinicians
-                from around the world. This team brings together a wealth of expertise, ensuring that each health report
-                is not only comprehensive but also enriched with insights from various medical perspectives and
-                practices.</p>
-            </div>
-            <div class="fea_icon">
-              <div class="feat_icon_cir">
-                <img src="images/feat_icon_2.png" alt="">
-              </div>
-            </div>
-            <div class="fea_img">
-              <img src="images/feat_img2.png" alt="">
-            </div>
-          </div>
-
-          <div class="feature_row">
-            <div class="fea_txt">
-              <h2>Commitment to Excellence</h2>
-              <p>At N1 Healthcare, we are committed to upholding the highest standards of quality and precision in every
-                aspect of our service. We continuously update our methodologies and practices to stay abreast of the
-                latest advancements in healthcare and medical technology.</p>
-            </div>
-            <div class="fea_icon">
-              <div class="feat_icon_cir">
-                <img src="images/feat_icon_3.png" alt="">
-              </div>
-            </div>
-            <div class="fea_img">
-              <img src="images/feat_img3.png" alt="">
-            </div>
-          </div>
-
-          <div class="feature_row">
-            <div class="fea_txt">
-              <h2>Empowering Our Clients</h2>
-              <p>The core of our service is empowering our clients with knowledge. We
-                believe that informed clients are better equipped to make decisions about their healthcare and
-                lifestyle,
-                leading to improved health outcomes and enhanced quality of life.</p>
-            </div>
-            <div class="fea_icon">
-              <div class="feat_icon_cir">
-                <img src="images/feat_icon_4.png" alt="">
-              </div>
-            </div>
-            <div class="fea_img">
-              <img src="images/feat_img4.png" alt="">
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- feature sec -->
-
-  <!-- join us -->
-  <section class="join_us" style="background-image: url(images/join_bg.png);">
+  <!-- Mission -->
+  <section>
     <div class="container">
-      <div class="join_inr_wrp">
-        <h2>Join us at N1 Healthcare Ltd., where we are dedicated to pioneering a new era in healthcare, focused on
-          personalization, precision, and the pursuit of optimal health and longevity for each of our clients.</h2>
-        <!-- <form action="#">
-          <div class="join_frm_wrp">
-            <input type="email" placeholder="Email" required>
-            <button type="submit">Submit</button>
-          </div>
-        </form> -->
+      <div class="section-header reveal">
+        <span class="section-label">Our Mission</span>
+        <h2>Healthcare should be personal.</h2>
       </div>
-    </div>
-  </section>
-  <!-- join us -->
-
-  <!-- bios sec -->
-  <section class="bios">
-    <div class="container">
-      <h2>Founders Bios</h2>
-      <div class="bios_slick">
-        <div class="bios_box">
-          <div class="bios_auth">
-            <img src="images/bios_img.png" alt="">
-          </div>
-          <div class="auth_txt">
-            <h3>Nick Sireau</h3>
-            <p>Nick Sireau, PhD, is co-founder of N1 Healthcare, and brings a wealth of experience and a deep
-              passion for healthcare innovation. With a background in medical sciences and a strong inclination
-              towards research and development, Nick has always been at the forefront of adopting new approaches
-              to healthcare. Nick is the CEO and Chair of Trustees at the AKU Society, a patient group that helps
-              people with AKU, a rare genetic disease affecting both his children. The AKU Society and Nick are the
-              winners of the 2021 Members Award by EURORDIS (the European Organisation of Rare Diseases)
-              because of their work on successfully developing a new treatment for AKU. Nick is co-founder and
-              Chair of Beacon, an organisation that helps all rare disease patient groups. He is the editor of ‘Rare
-              Diseases: Challenges and Opportunities for Social Entrepreneurs’ (Greenleaf 2013) and of the 'Patient
-              Group Handbook: A Practical Guide for Research and Drug Development' (Beacon 2016). Nick is cofounder and
-              Chair of Orchard OCD, a medical charity that funds research into obsessive-compulsive
-              disorder (OCD), a common yet debilitating mental health condition. He is also co-founder of Sirgartan
-              Therapeutics, a biotech that focuses on new treatments for OCD, and of Sireau Labs, a biotech that is
-              developing mRNA therapy for AKU and other rare genetic diseases. Nick has a BA in history and
-              economics from Oxford University, an MSc in management studies from the Lyon Graduate School of
-              Business, an MA in Journalism Studies from Westminster University and a PhD in social psychology
-              from City University. He is a fellow of the Ashoka Fellowship of Social Entrepreneurs.</p>
-          </div>
+      <div class="mission-split">
+        <div>
+          <p class="mission-text reveal">
+            Clinicians spend too much time piecing together patient records — scanning PDFs, cross-referencing lab results, manually tracking biomarker trends. We believe that process should be automated, so clinicians can focus on what they do best: caring for patients.
+          </p>
+          <p class="mission-text reveal" style="margin-top: 1.5rem;">
+            N1 Healthcare is a platform where medical records are uploaded, automatically parsed into structured data — biomarkers, diagnoses, procedures, genetics — and then analysed by AI to generate comprehensive health reports. Multiple report types, each with a different clinical lens, ensure the right insight for every patient and every consultation.
+          </p>
         </div>
-
-        <div class="bios_box">
-          <div class="bios_auth">
-            <img src="images/auth_2.png" alt="">
-          </div>
-          <div class="auth_txt">
-            <h3>Jean Yves Sireau</h3>
-            <p>Jean-Yves Sireau is the visionary entrepreneur behind N1 Healthcare Ltd. His journey in the business
-              world began at a young age, marked by a spirit of innovation and a penchant for strategic thinking.
-              Before co-founding N1 Healthcare, Jean-Yves had already established himself as a successful
-              entrepreneur. Jean-Yves is the founder and CEO of Deriv, an online trading broker founded in 1999.
-              The company has become one of the world’s largest online brokers, offering a wide range of CFD and
-              other derivative contracts on forex, stocks, and derived indices to over a million clients worldwide.
-              Now a global company, Deriv Group Ltd has more than 1,300 employees across 20 offices worldwide.</p>
-            <p>Jean-Yves's inspiration for N1 Healthcare stemmed from his keen interest in personalized medicine and
-              his belief in the transformative power of technology in healthcare. He recognized the gap in tailored
-              healthcare services for discerning individuals and saw an opportunity to bring his entrepreneurial vision
-              to this niche sector. His goal was to create a service that not only catered to the unique health needs of
-              each client but also empowered them with comprehensive, data-driven insights for better health
-              management.</p>
-          </div>
+        <div class="mission-image reveal">
+          <img src="https://images.unsplash.com/photo-1666214280557-f1b5022eb634?w=800&h=1067&fit=crop&crop=center&q=80" alt="Clinician reviewing patient health data" loading="lazy">
         </div>
       </div>
     </div>
   </section>
-  <!-- bios sec -->
 
-
-
-  <!-- start footer -->
-  <footer>
+  <!-- The Team -->
+  <section>
     <div class="container">
-      <div class="footheading">
-        <h5>Join us at N1 Healthcare</h5>
-        <h2>Where we turn your health data
-          into actionable insights, helping you
-          chart a course towards a healthier,
-          more informed life</h2>
+      <div class="section-header reveal">
+        <span class="section-label">The Team</span>
+        <h2>Who we are.</h2>
+        <p class="text-lg">A cross-disciplinary team of clinicians, data scientists, AI engineers, and health optimisation experts — trained at leading institutions and united by a passion for precision health.</p>
       </div>
-      <!-- <div class="formflex">
-        <input type="email" class="form-control" placeholder=" Email">
-        <button class="loginbtn">Submit</button>
-      </div> -->
-      <div class="footmenuflx">
-        <a href="index.html" class="footlogo"><img src="images/logo.png" alt=""></a>
-        <ul class="fmenulist">
-          <li>
-            <a href="about.html"> About Us</a>
-          </li>
-          <li>
-            <a href="services.html">Our Services</a>
-          </li>
-          <li>
-            <a href="health_report.html">The Health Report</a>
-          </li>
-          <li>
-            <a href="our_team.html">Our Team</a>
-          </li>
-          <li>
+      <div class="team-grid reveal-stagger">
+        <div class="team-member">
+          <div class="team-member-photo"><img src="images/team/jean-yves-sireau.jpg" alt="Jean-Yves Sireau" loading="lazy"></div>
+          <h4>Jean-Yves Sireau</h4>
+          <p>Founder & CEO</p>
+        </div>
+        <div class="team-member">
+          <div class="team-member-photo"><img src="images/team/leah-elise.jpg" alt="Leah Elise" loading="lazy"></div>
+          <h4>Leah Elise</h4>
+          <p>Director of Operations</p>
+        </div>
+        <div class="team-member">
+          <div class="team-member-photo"><img src="images/team/prasad-chalasani.jpg" alt="Prasad Chalasani" loading="lazy"></div>
+          <h4>Prasad Chalasani</h4>
+          <p>Senior AI Engineer</p>
+        </div>
+        <div class="team-member">
+          <div class="team-member-photo"><img src="images/team/arun-venkataraman.jpg" alt="Arun Venkataraman" loading="lazy"></div>
+          <h4>Arun Venkataraman</h4>
+          <p>Principal Engineer</p>
+        </div>
+        <div class="team-member">
+          <div class="team-member-photo"><img src="images/team/jasper-middendorp.jpg" alt="Jasper Middendorp" loading="lazy"></div>
+          <h4>Jasper Middendorp</h4>
+          <p>Senior Engineer</p>
+        </div>
+        <div class="team-member">
+          <div class="team-member-photo"><img src="images/team/dannette-kallay.png" alt="Dr. Dannette Kallay" loading="lazy"></div>
+          <h4>Dr. Dannette Kallay</h4>
+          <p>Integrative Physician</p>
+        </div>
+        <div class="team-member">
+          <div class="team-member-photo"><img src="images/team/aniruddha-deshpande.jpg" alt="Aniruddha Deshpande" loading="lazy"></div>
+          <h4>Aniruddha Deshpande</h4>
+          <p>Senior AI Engineer</p>
+        </div>
+        <div class="team-member">
+          <div class="team-member-photo"><img src="images/team/darpan-bafana.png" alt="Darpan Bafana" loading="lazy"></div>
+          <h4>Darpan Bafana</h4>
+          <p>DevOps Engineer</p>
+        </div>
+        <div class="team-member">
+          <div class="team-member-photo"><img src="images/team/nikhil-bery.jpg" alt="Nikhil Bery" loading="lazy"></div>
+          <h4>Nikhil Bery</h4>
+          <p>Senior AI Engineer</p>
+        </div>
+        <div class="team-member">
+          <div class="team-member-photo"><img src="images/team/coen-elferink.png" alt="Coen Elferink" loading="lazy"></div>
+          <h4>Coen Elferink</h4>
+          <p>Senior Frontend Developer</p>
+        </div>
+        <div class="team-member">
+          <div class="team-member-photo"><img src="images/team/umar-shah.jpg" alt="Umar Shah" loading="lazy"></div>
+          <h4>Umar Shah</h4>
+          <p>Senior AI Engineer</p>
+        </div>
+        <div class="team-member">
+          <div class="team-member-photo"><img src="images/team/raj-kumar.png" alt="Raj Kumar" loading="lazy"></div>
+          <h4>Raj Kumar</h4>
+          <p>Senior AI Engineer</p>
+        </div>
+        <div class="team-member">
+          <div class="team-member-photo"><img src="images/team/ashrith-jacob.jpg" alt="Ashrith Jacob" loading="lazy"></div>
+          <h4>Ashrith Jacob</h4>
+          <p>Senior AI Engineer</p>
+        </div>
+        <div class="team-member">
+          <div class="team-member-photo"><img src="images/team/puneet-singhal.png" alt="Puneet Singhal" loading="lazy"></div>
+          <h4>Puneet Singhal</h4>
+          <p>Senior AI Engineer</p>
+        </div>
+        <div class="team-member">
+          <div class="team-member-photo"><img src="images/team/yash-vibhandik.jpg" alt="Yash Vibhandik" loading="lazy"></div>
+          <h4>Yash Vibhandik</h4>
+          <p>Senior AI Engineer</p>
+        </div>
+        <div class="team-member">
+          <div class="team-member-photo"><img src="images/team/timothy-tu.png" alt="Timothy Tu" loading="lazy"></div>
+          <h4>Timothy Tu</h4>
+          <p>Senior Frontend Developer</p>
+        </div>
+        <div class="team-member">
+          <div class="team-member-photo"><img src="images/team/dhrumil-kherde.png" alt="Dhrumil Kherde" loading="lazy"></div>
+          <h4>Dhrumil Kherde</h4>
+          <p>Product Designer</p>
+        </div>
+        <div class="team-member">
+          <div class="team-member-photo"><img src="images/team/utkarsh-gupta.png" alt="Utkarsh Gupta" loading="lazy"></div>
+          <h4>Utkarsh Gupta</h4>
+          <p>AI Engineer</p>
+        </div>
+        <div class="team-member">
+          <div class="team-member-photo"><img src="images/team/vishean-veloo.jpg" alt="Vishean Veloo" loading="lazy"></div>
+          <h4>Vishean Veloo</h4>
+          <p>AI Engineer</p>
+        </div>
+        <div class="team-member">
+          <div class="team-member-photo"><img src="images/team/yousuf-sarfraz.png" alt="Yousuf Sarfraz" loading="lazy"></div>
+          <h4>Yousuf Sarfraz</h4>
+          <p>AI Engineer</p>
+        </div>
+        <div class="team-member">
+          <div class="team-member-photo"><img src="images/team/jun-an-tan.png" alt="Jun An Tan" loading="lazy"></div>
+          <h4>Jun An Tan</h4>
+          <p>AI Engineer</p>
+        </div>
+        <div class="team-member">
+          <div class="team-member-photo"><img src="images/team/paawan-purdhani.png" alt="Paawan Purdhani" loading="lazy"></div>
+          <h4>Paawan Purdhani</h4>
+          <p>AI Engineer</p>
+        </div>
+        <div class="team-member">
+          <div class="team-member-photo"><img src="images/team/neshalini-sathiabalan.jpg" alt="Neshalini Sathiabalan" loading="lazy"></div>
+          <h4>Neshalini Sathiabalan</h4>
+          <p>Clinical Research Coordinator</p>
+        </div>
+        <div class="team-member">
+          <div class="team-member-photo"><img src="images/team/siew-mei-lau.jpg" alt="Siew Mei Lau" loading="lazy"></div>
+          <h4>Siew Mei Lau</h4>
+          <p>Clinical Research Coordinator</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Values -->
+  <section class="teaser">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Our Values</span>
+        <h2>What guides us.</h2>
+      </div>
+      <div class="values-grid reveal-stagger">
+        <div class="value-item">
+          <h4>Scientific Rigour</h4>
+          <p>Every report is grounded in peer-reviewed research and validated clinical standards. We don't speculate — we cite. Our AI models are calibrated against clinical evidence before any insight reaches a report.</p>
+        </div>
+        <div class="value-item">
+          <h4>Patient First</h4>
+          <p>We design for the clinician using the platform and the patient receiving the report. Clear language, actionable recommendations, and clinical utility — these are non-negotiable.</p>
+        </div>
+        <div class="value-item">
+          <h4>Accessibility</h4>
+          <p>AI-powered clinical intelligence shouldn't be reserved for elite institutions. We're building a platform that makes advanced health analysis accessible to clinicians everywhere — from large hospitals to independent practices.</p>
+        </div>
+        <div class="value-item">
+          <h4>Privacy & Security</h4>
+          <p>Medical records, biomarkers, and genetic data are among the most sensitive information that exists. We treat data protection not as a compliance checkbox but as a foundational design principle.</p>
+        </div>
+        <div class="value-item">
+          <h4>Transparency</h4>
+          <p>We show our work. Every recommendation links back to its evidence base. Every risk score explains its methodology. If we don't have enough data, we say so explicitly.</p>
+        </div>
+        <div class="value-item">
+          <h4>Continuous Improvement</h4>
+          <p>Clinical science moves fast. Our report models evolve with the latest research — new clinical guidelines, emerging biomarker associations, and improved AI analysis are integrated on an ongoing basis.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Banner -->
+  <section class="cta-banner cta-banner--dark">
+    <div class="container reveal">
+      <h2>Join us in building the<br>future of clinical intelligence.</h2>
+      <p>Start generating AI-powered health reports for your patients today.</p>
+      <a href="https://app.n1.care" class="btn btn-primary">Get started</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <div class="nav-logo"><img src="images/n1-logo.png" alt="N1 Healthcare"></div>
+          <p>AI-powered clinical health intelligence — turning medical records into actionable insights for clinicians and their patients.</p>
+        </div>
+        <div class="footer-links">
+          <div class="footer-col">
+            <h4>Product</h4>
+            <a href="how-it-works.html">How It Works</a>
+            <a href="health-report.html">Reports</a>
+            <a href="pricing.html">Pricing</a>
+            <a href="https://app.n1.care">Get Started</a>
+          </div>
+          <div class="footer-col">
+            <h4>Company</h4>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
             <a href="faq.html">FAQ</a>
-          </li>
-        </ul>
-        <a href="mailto:longevity@n1.healthcare" class="ftemail">Email : longevity@n1.healthcare</a>
+          </div>
+          <div class="footer-col">
+            <h4>Legal</h4>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="terms.html">Terms of Service</a>
+          </div>
+        </div>
       </div>
-      <p class="copy_right"><a href="privacy_policy.html">Privacy Policy</a></p>
+      <div class="footer-bottom">
+        &copy; 2026 N1 Healthcare. All rights reserved.
+      </div>
     </div>
   </footer>
-  <!-- end footer -->
 
-
-
-
-  <script src="js/jquery-3.6.4.min.js"></script>
-  <script src="https://kit.fontawesome.com/ab591c4248.js" crossorigin="anonymous"></script>
-  <script src="js/bootstrap.bundle.min.js"></script>
-  <script src="js/slick.min.js"></script>
-  <script src="js/custom.js"></script>
+  <script src="main.js"></script>
 </body>
-
 </html>

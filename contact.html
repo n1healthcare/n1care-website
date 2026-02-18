@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Get Started — N1 Healthcare</title>
+  <meta name="description" content="Get started with N1 Healthcare's AI-powered clinical health intelligence platform. Contact us to learn more.">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <meta property="og:title" content="Get Started — N1 Healthcare">
+  <meta property="og:description" content="Contact N1 Healthcare to learn about our AI-powered clinical intelligence platform.">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="N1 Healthcare">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Nav -->
+  <nav class="nav nav-transparent">
+    <div class="container nav-inner">
+      <a href="index.html" class="nav-logo"><img src="images/n1-logo.png" alt="N1 Healthcare"></a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="how-it-works.html">How It Works</a>
+        <a href="health-report.html">Reports</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="about.html">About</a>
+        <a href="https://app.n1.care" class="btn btn-primary">Get Started</a>
+      </div>
+      <button class="nav-toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Page Header + Contact Form -->
+  <section class="subpage-header subpage-header--contact">
+    <div class="subpage-wave subpage-wave--1"></div>
+    <div class="subpage-wave subpage-wave--2"></div>
+    <div class="container">
+      <span class="section-label reveal">Get Started</span>
+      <h1 class="reveal">Let's get started.</h1>
+      <p class="reveal">Tell us about your practice and we'll be in touch to discuss how N1 can help you and your patients.</p>
+
+      <div class="contact-grid reveal">
+
+        <!-- Form -->
+        <div>
+          <form id="contact-form">
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" name="name" placeholder="Your name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="you@example.com" required>
+            </div>
+            <div class="form-group">
+              <label for="type">I am a...</label>
+              <select id="type" name="type" required>
+                <option value="" disabled selected>Select one</option>
+                <option value="individual">Individual / Patient</option>
+                <option value="clinician">Clinician / Healthcare Provider</option>
+                <option value="clinic">Clinic / Health Organisation</option>
+                <option value="partner">Potential Partner</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" placeholder="Tell us what you're looking for..." rows="5"></textarea>
+            </div>
+            <!-- Honeypot — hidden from humans, bots fill it -->
+            <div class="form-honeypot" aria-hidden="true">
+              <input type="text" name="website" tabindex="-1" autocomplete="off">
+            </div>
+            <button type="submit" class="btn btn-primary">Send message</button>
+          </form>
+
+          <div class="form-error">
+            <p>Something went wrong. Please try again, or email us directly at <a href="mailto:longevity@n1.care">longevity@n1.care</a>.</p>
+          </div>
+
+          <div class="form-success">
+            <h3>Thank you!</h3>
+            <p class="text-muted">We've received your message and will be in touch shortly.</p>
+          </div>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="contact-info">
+          <h3>Or reach us directly.</h3>
+          <div class="contact-detail">
+            <div class="label">Email</div>
+            <a href="mailto:longevity@n1.care">longevity@n1.care</a>
+          </div>
+          <div class="contact-detail">
+            <div class="label">Phone</div>
+            <a href="tel:+13022020303">+1 (302) 202-0303</a>
+          </div>
+          <div class="contact-detail">
+            <div class="label">Address</div>
+            <p>N1 Research, LLC<br>1111B S Governors Ave STE 39520<br>Dover, DE 19904<br>USA</p>
+          </div>
+          <div style="margin-top: 2rem; padding-top: 2rem; border-top: 1px solid var(--border);">
+            <p class="text-muted" style="font-size: 0.875rem; line-height: 1.7;">
+              We typically respond within one business day.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <div class="nav-logo"><img src="images/n1-logo.png" alt="N1 Healthcare"></div>
+          <p>AI-powered clinical health intelligence — turning medical records into actionable insights for clinicians and their patients.</p>
+        </div>
+        <div class="footer-links">
+          <div class="footer-col">
+            <h4>Product</h4>
+            <a href="how-it-works.html">How It Works</a>
+            <a href="health-report.html">Reports</a>
+            <a href="pricing.html">Pricing</a>
+            <a href="https://app.n1.care">Get Started</a>
+          </div>
+          <div class="footer-col">
+            <h4>Company</h4>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="faq.html">FAQ</a>
+          </div>
+          <div class="footer-col">
+            <h4>Legal</h4>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="terms.html">Terms of Service</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        &copy; 2026 N1 Healthcare. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

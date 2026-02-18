@@ -1,285 +1,1019 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
-  <meta name="author" content="" />
-  <title>N1 Healthcare Ltd</title>
-
-  <!--fav icon-->
-  <link rel="shortcut icon" href="images/fav_icon.png" type="image/x-icon" />
-  <!-- Default links -->
-  <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-
-  <!-- google font -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
-    rel="stylesheet">
-
-  <!--Plugin Css-->
-  <link href="css/slick.css" rel="stylesheet" type="text/css" />
-  <link href="css/slick-theme.css" rel="stylesheet" type="text/css" />
-
-  <!-- custom links -->
-  <link href="css/fonts.css" rel="stylesheet" type="text/css" />
-  <link href="css/custom.css" rel="stylesheet" type="text/css" />
-  <link href="css/responsive.css" rel="stylesheet" type="text/css" />
-  <link href="css/developer.css" rel="stylesheet" type="text/css" />
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-PWJG9QEDTP"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-PWJG9QEDTP');
-</script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>N1 Healthcare — AI-Powered Clinical Health Intelligence</title>
+  <meta name="description" content="N1 Healthcare helps clinicians upload medical records, extract structured data, and generate AI-powered health reports for their patients.">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <meta property="og:title" content="N1 Healthcare — AI-Powered Clinical Health Intelligence">
+  <meta property="og:description" content="Turn medical records into structured, actionable health intelligence with AI-powered reports built for clinicians.">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="N1 Healthcare">
+  <link rel="stylesheet" href="styles.css">
 </head>
+<body>
 
-<body class="index_page">
-  <!-- Header start -->
-  <header class="hedr">
-    <div class="container">
-      <nav class="navbar">
-        <a href="index.html" class="navbar_brand">
-          <img src="images/logo.png" alt="">
-        </a>
-        <div class="navmenumain">
-          <ul class="nav_menu">
-            <li class="nav_item active">
-              <a href="about.html" class="nav_link">
-                About Us
-              </a>
-            </li>
-            <li class="nav_item">
-              <a href="services.html" class="nav_link">
-                Our Services
-              </a>
-            </li>
-            <li class="nav_item">
-              <a href="health_report.html" class="nav_link">
-                The Health Report
-              </a>
-            </li>
-            <li class="nav_item">
-              <a href="our_team.html" class="nav_link">
-                Our Team
-              </a>
-            </li>
-            <li class="nav_item">
-              <a href="faq.html" class="nav_link">
-                FAQ
-              </a>
-            </li>
-          </ul>
+  <!-- Nav (transparent over hero) -->
+  <nav class="nav nav-transparent">
+    <div class="container nav-inner">
+      <a href="index.html" class="nav-logo"><img src="images/n1-logo.png" alt="N1 Healthcare"></a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="how-it-works.html">How It Works</a>
+        <a href="health-report.html">Reports</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="about.html">About</a>
+        <a href="https://app.n1.care" class="btn btn-primary">Get Started</a>
+      </div>
+      <button class="nav-toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
 
-          <button type="button" class="d-inline-block d-lg-none nav_togge_btn" id="nav_togge_btn"
-            onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))"
-            aria-label="Main Menu">
-            <svg width="37" height="37" viewBox="0 0 100 100">
-              <path class="line line1"
-                d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
-              <path class="line line2" d="M 20,50 H 80" />
-              <path class="line line3"
-                d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+  <!-- Hero -->
+  <section class="hero">
+
+    <!-- Tide background (locked) -->
+    <div class="hero-bg hero-bg--tide active">
+      <div class="tide-wave tide-wave--1"></div>
+      <div class="tide-wave tide-wave--2"></div>
+      <div class="tide-wave tide-wave--3"></div>
+    </div>
+
+    <div class="container hero-grid">
+      <!-- Left: Text -->
+      <div class="hero-text">
+        <h1 class="reveal">Smarter Insights<br>for Better Care</h1>
+        <p class="reveal">N1 Healthcare turns medical records into structured, actionable health intelligence — AI-powered reports built for clinicians and their patients.</p>
+        <div class="hero-actions reveal">
+          <a href="https://app.n1.care" class="btn btn-primary">Get started</a>
+          <a href="how-it-works.html" class="btn btn-ghost">See how it works</a>
+        </div>
+      </div>
+
+      <!-- Right: Visual -->
+      <div class="hero-visual reveal">
+
+        <!-- 1. App Preview -->
+        <div class="hero-vis hero-vis--app-preview">
+          <div class="app-preview-card">
+            <div class="app-preview-header">
+              <span class="app-preview-logo">N1</span>
+              <span class="app-preview-title">Patient Dashboard</span>
+            </div>
+            <div class="app-preview-row"><span class="app-preview-label">HbA1c</span><span class="app-preview-val snapshot-green">5.4%</span><span class="app-preview-range">4.0 – 5.6</span></div>
+            <div class="app-preview-row"><span class="app-preview-label">Glucose</span><span class="app-preview-val snapshot-amber">108</span><span class="app-preview-range">70 – 100 mg/dL</span></div>
+            <div class="app-preview-row"><span class="app-preview-label">Cholesterol</span><span class="app-preview-val snapshot-green">192</span><span class="app-preview-range">&lt;200 mg/dL</span></div>
+            <div class="app-preview-row"><span class="app-preview-label">TSH</span><span class="app-preview-val snapshot-red">6.2</span><span class="app-preview-range">0.4 – 4.0 mIU/L</span></div>
+            <div class="app-preview-row"><span class="app-preview-label">Vitamin D</span><span class="app-preview-val snapshot-green">72</span><span class="app-preview-range">30 – 100 ng/mL</span></div>
+          </div>
+        </div>
+
+        <!-- 2. Data Cards -->
+        <div class="hero-vis hero-vis--data-cards">
+          <div class="data-card data-card--bio"><span class="data-card-count">847</span><span class="data-card-label">Biomarkers</span><span class="data-card-sub">12 out of range</span></div>
+          <div class="data-card data-card--diag"><span class="data-card-count">23</span><span class="data-card-label">Diagnoses</span><span class="data-card-sub">6 active</span></div>
+          <div class="data-card data-card--proc"><span class="data-card-count">18</span><span class="data-card-label">Procedures</span><span class="data-card-sub">3 scheduled</span></div>
+        </div>
+
+        <!-- 3. Process Animation (Upload → Extract → Report) -->
+        <div class="hero-vis hero-vis--process active">
+          <div class="process-anim">
+            <!-- Step indicators -->
+            <div class="process-steps">
+              <div class="process-step-ind process-step-ind--1">
+                <span class="process-step-num">1</span>
+                <span class="process-step-text">Upload</span>
+              </div>
+              <div class="process-step-line process-step-line--1"></div>
+              <div class="process-step-ind process-step-ind--2">
+                <span class="process-step-num">2</span>
+                <span class="process-step-text">Extract</span>
+              </div>
+              <div class="process-step-line process-step-line--2"></div>
+              <div class="process-step-ind process-step-ind--3">
+                <span class="process-step-num">3</span>
+                <span class="process-step-text">Report</span>
+              </div>
+            </div>
+
+            <!-- Stage area -->
+            <div class="process-stage-area">
+              <!-- Upload -->
+              <div class="process-stage process-stage--upload">
+                <div class="process-doc">
+                  <div class="process-doc-content">
+                    <div class="process-doc-top">
+                      <span class="process-doc-badge">PDF</span>
+                      <span class="process-doc-name">Blood_Panel_2026.pdf</span>
+                    </div>
+                    <div class="process-doc-meta">Uploaded just now &middot; 2.4 MB</div>
+                    <div class="process-doc-lines">
+                      <span style="width:100%"></span>
+                      <span style="width:85%"></span>
+                      <span style="width:92%"></span>
+                      <span style="width:70%"></span>
+                      <span style="width:88%"></span>
+                    </div>
+                    <div class="process-doc-progress">
+                      <div class="process-doc-progress-bar"></div>
+                    </div>
+                  </div>
+                  <div class="process-doc-done">
+                    <svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="22" stroke="#16a34a" stroke-width="2.5" opacity="0.15"/><circle class="process-doc-done-circle" cx="24" cy="24" r="22" stroke="#16a34a" stroke-width="2.5" stroke-linecap="round"/><path class="process-doc-done-tick" d="M15 24l7 7 11-13" stroke="#16a34a" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    <span>Uploaded</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Extract -->
+              <div class="process-stage process-stage--extract">
+                <div class="process-extract">
+                  <div class="process-extract-header">
+                    <span class="process-extract-spinner"></span>
+                    Extracting clinical data...
+                  </div>
+                  <div class="process-data-row process-data-row--1">
+                    <span class="process-data-dot" style="background:#16a34a"></span>
+                    <span class="process-data-name">HbA1c</span>
+                    <strong class="snapshot-green">5.4%</strong>
+                  </div>
+                  <div class="process-data-row process-data-row--2">
+                    <span class="process-data-dot" style="background:#f59e0b"></span>
+                    <span class="process-data-name">Glucose</span>
+                    <strong class="snapshot-amber">108 mg/dL</strong>
+                  </div>
+                  <div class="process-data-row process-data-row--3">
+                    <span class="process-data-dot" style="background:#ef4444"></span>
+                    <span class="process-data-name">TSH</span>
+                    <strong class="snapshot-red">6.2 mIU/L</strong>
+                  </div>
+                  <div class="process-data-row process-data-row--4">
+                    <span class="process-data-dot" style="background:#16a34a"></span>
+                    <span class="process-data-name">Vitamin D</span>
+                    <strong class="snapshot-green">72 ng/mL</strong>
+                  </div>
+                  <div class="process-extract-count">42 biomarkers &middot; 6 diagnoses &middot; 3 procedures</div>
+                </div>
+              </div>
+
+              <!-- Report -->
+              <div class="process-stage process-stage--report">
+                <div class="process-report">
+                  <div class="process-report-header">
+                    <span class="process-report-title">Health Report</span>
+                    <span class="process-report-badge report-anim report-anim--badge">Complete</span>
+                  </div>
+                  <div class="process-report-stats">
+                    <div class="process-report-stat report-anim report-anim--stat1">
+                      <span class="process-report-stat-val snapshot-green">38</span>
+                      <span class="process-report-stat-label">In Range</span>
+                    </div>
+                    <div class="process-report-stat report-anim report-anim--stat2">
+                      <span class="process-report-stat-val snapshot-red">4</span>
+                      <span class="process-report-stat-label">Flagged</span>
+                    </div>
+                    <div class="process-report-stat report-anim report-anim--stat3">
+                      <span class="process-report-stat-val" style="color:#6366f1">6</span>
+                      <span class="process-report-stat-label">Diagnoses</span>
+                    </div>
+                  </div>
+                  <div class="process-report-summary">
+                    <div class="process-report-line report-anim report-anim--line1"></div>
+                    <div class="process-report-line report-anim report-anim--line2"></div>
+                    <div class="process-report-line report-anim report-anim--line3"></div>
+                  </div>
+                  <div class="process-report-footer report-anim report-anim--footer">AI-powered clinical analysis</div>
+                </div>
+              </div>
+
+              <!-- Success -->
+              <div class="process-stage process-stage--success">
+                <div class="process-success">
+                  <svg class="process-success-check" viewBox="0 0 80 80" fill="none">
+                    <circle cx="40" cy="40" r="36" stroke="#16a34a" stroke-width="3" opacity="0.15"/>
+                    <circle class="process-success-circle" cx="40" cy="40" r="36" stroke="#16a34a" stroke-width="3" stroke-linecap="round"/>
+                    <path class="process-success-tick" d="M24 40l10 10 22-22" stroke="#16a34a" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  <span class="process-success-text">Report ready</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4. Metric Rings -->
+        <div class="hero-vis hero-vis--metric-rings">
+          <div class="ring-container">
+            <svg class="metric-ring" viewBox="0 0 160 160">
+              <circle cx="80" cy="80" r="70" stroke="#e5e7eb" stroke-width="8" fill="none"/>
+              <circle cx="80" cy="80" r="70" stroke="#10b981" stroke-width="8" fill="none" stroke-dasharray="440" stroke-dashoffset="88" stroke-linecap="round" class="ring-fill ring-fill--1"/>
+              <circle cx="80" cy="80" r="56" stroke="#e5e7eb" stroke-width="8" fill="none"/>
+              <circle cx="80" cy="80" r="56" stroke="#f59e0b" stroke-width="8" fill="none" stroke-dasharray="352" stroke-dashoffset="105" stroke-linecap="round" class="ring-fill ring-fill--2"/>
+              <circle cx="80" cy="80" r="42" stroke="#e5e7eb" stroke-width="8" fill="none"/>
+              <circle cx="80" cy="80" r="42" stroke="#ef4444" stroke-width="8" fill="none" stroke-dasharray="264" stroke-dashoffset="132" stroke-linecap="round" class="ring-fill ring-fill--3"/>
             </svg>
+            <div class="ring-labels">
+              <span class="ring-label" style="color:#10b981">80% In Range</span>
+              <span class="ring-label" style="color:#f59e0b">70% Tracked</span>
+              <span class="ring-label" style="color:#ef4444">50% Reviewed</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 5. Health Grid -->
+        <div class="hero-vis hero-vis--health-grid">
+          <div class="health-grid-inner">
+            <div class="health-grid-card">
+              <svg viewBox="0 0 32 32" fill="none"><path d="M16 28C16 28 6 20.6 6 14a5.5 5.5 0 0110-3.2A5.5 5.5 0 0126 14c0 6.6-10 14-10 14z" fill="#ef444420" stroke="#ef4444" stroke-width="1.5"/></svg>
+              <span class="hg-label">Heart Rate</span>
+              <span class="hg-value">72 bpm</span>
+            </div>
+            <div class="health-grid-card">
+              <svg viewBox="0 0 32 32" fill="none"><path d="M16 4c1.5 0 3 .8 4 2.5C22 9.5 22 14 22 17c0 4-2 7-6 11-4-4-6-7-6-11 0-3 0-7.5 2-10.5C13 4.8 14.5 4 16 4z" fill="#6366f120" stroke="#6366f1" stroke-width="1.5"/><path d="M13 15c.5-2 1.5-3.5 3-3.5s2.5 1.5 3 3.5" stroke="#6366f1" stroke-width="1.2" stroke-linecap="round" fill="none"/></svg>
+              <span class="hg-label">Genetics</span>
+              <span class="hg-value">18 variants</span>
+            </div>
+            <div class="health-grid-card">
+              <svg viewBox="0 0 32 32" fill="none"><rect x="8" y="10" width="16" height="16" rx="3" fill="#0d737720" stroke="#0d7377" stroke-width="1.5"/><path d="M13 18h6M16 15v6" stroke="#0d7377" stroke-width="1.5" stroke-linecap="round"/></svg>
+              <span class="hg-label">Medications</span>
+              <span class="hg-value">4 active</span>
+            </div>
+            <div class="health-grid-card">
+              <svg viewBox="0 0 32 32" fill="none"><rect x="4" y="4" width="24" height="24" rx="3" fill="#16a34a10" stroke="#16a34a" stroke-width="1.2"/><path d="M6 24l5-10 5 6 5-14 5 8" stroke="#16a34a" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+              <span class="hg-label">Trends</span>
+              <span class="hg-value">847 points</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 6. Floating Badges -->
+        <div class="hero-vis hero-vis--floating-badges">
+          <div class="float-badge float-badge--1">42 Biomarkers</div>
+          <div class="float-badge float-badge--2">12 Diagnoses</div>
+          <div class="float-badge float-badge--3">6 Reports</div>
+          <div class="float-badge float-badge--4">18 Genetics</div>
+          <div class="float-badge float-badge--5">3 Procedures</div>
+        </div>
+
+        <!-- 7. Abstract Nodes -->
+        <div class="hero-vis hero-vis--nodes">
+          <svg class="nodes-svg" viewBox="0 0 300 300">
+            <line x1="150" y1="80" x2="80" y2="160" stroke="#0d7377" stroke-width="1.5" opacity="0.3"/>
+            <line x1="150" y1="80" x2="220" y2="140" stroke="#16a34a" stroke-width="1.5" opacity="0.3"/>
+            <line x1="80" y1="160" x2="140" y2="230" stroke="#6366f1" stroke-width="1.5" opacity="0.3"/>
+            <line x1="220" y1="140" x2="180" y2="220" stroke="#f59e0b" stroke-width="1.5" opacity="0.3"/>
+            <line x1="140" y1="230" x2="180" y2="220" stroke="#ef4444" stroke-width="1.5" opacity="0.3"/>
+            <line x1="80" y1="160" x2="220" y2="140" stroke="#0d7377" stroke-width="1" opacity="0.15"/>
+            <circle cx="150" cy="80" r="12" fill="#0d7377" class="node-pulse node-pulse--1"/>
+            <circle cx="80" cy="160" r="10" fill="#16a34a" class="node-pulse node-pulse--2"/>
+            <circle cx="220" cy="140" r="10" fill="#6366f1" class="node-pulse node-pulse--3"/>
+            <circle cx="140" cy="230" r="8" fill="#f59e0b" class="node-pulse node-pulse--4"/>
+            <circle cx="180" cy="220" r="8" fill="#ef4444" class="node-pulse node-pulse--5"/>
+            <text x="150" y="60" text-anchor="middle" fill="#3a6b6d" font-size="10" font-weight="600">Records</text>
+            <text x="55" y="165" text-anchor="middle" fill="#3a6b6d" font-size="9" font-weight="600">Bio</text>
+            <text x="248" y="145" text-anchor="middle" fill="#3a6b6d" font-size="9" font-weight="600">Diag</text>
+            <text x="130" y="255" text-anchor="middle" fill="#3a6b6d" font-size="9" font-weight="600">Gen</text>
+            <text x="200" y="245" text-anchor="middle" fill="#3a6b6d" font-size="9" font-weight="600">Proc</text>
+          </svg>
+        </div>
+
+        <!-- 8. Document Stack -->
+        <div class="hero-vis hero-vis--doc-stack">
+          <div class="doc-stack">
+            <div class="doc-page doc-page--back2"></div>
+            <div class="doc-page doc-page--back1"></div>
+            <div class="doc-page doc-page--front">
+              <div class="doc-page-header">Extracted Data</div>
+              <div class="doc-page-row"><span class="doc-hl doc-hl--green"></span>Glucose: 108 mg/dL</div>
+              <div class="doc-page-row"><span class="doc-hl doc-hl--red"></span>TSH: 6.2 mIU/L</div>
+              <div class="doc-page-row"><span class="doc-hl doc-hl--green"></span>HbA1c: 5.4%</div>
+              <div class="doc-page-row"><span class="doc-hl doc-hl--amber"></span>Ferritin: 19 ng/mL</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 9. Globe Dots -->
+        <div class="hero-vis hero-vis--globe">
+          <div class="globe-container">
+            <svg class="globe-svg" viewBox="0 0 260 260">
+              <circle cx="130" cy="130" r="100" stroke="#3a6b6d" stroke-width="1" fill="none" opacity="0.15" stroke-dasharray="4 4"/>
+              <ellipse cx="130" cy="130" rx="60" ry="100" stroke="#3a6b6d" stroke-width="0.8" fill="none" opacity="0.1" stroke-dasharray="3 3"/>
+              <ellipse cx="130" cy="130" rx="100" ry="40" stroke="#3a6b6d" stroke-width="0.8" fill="none" opacity="0.1" stroke-dasharray="3 3"/>
+              <circle cx="170" cy="70" r="4" fill="#0d7377" class="globe-dot globe-dot--1"/>
+              <circle cx="90" cy="100" r="3.5" fill="#16a34a" class="globe-dot globe-dot--2"/>
+              <circle cx="200" cy="130" r="3" fill="#6366f1" class="globe-dot globe-dot--3"/>
+              <circle cx="110" cy="180" r="4" fill="#f59e0b" class="globe-dot globe-dot--4"/>
+              <circle cx="160" cy="170" r="3.5" fill="#ef4444" class="globe-dot globe-dot--5"/>
+              <circle cx="80" cy="140" r="3" fill="#0d7377" class="globe-dot globe-dot--6"/>
+              <circle cx="180" cy="100" r="3.5" fill="#10b981" class="globe-dot globe-dot--7"/>
+            </svg>
+          </div>
+        </div>
+
+        <!-- 10. Gradient Orb -->
+        <div class="hero-vis hero-vis--orb">
+          <div class="gradient-orb">
+            <div class="gradient-orb-inner"></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+
+  <!-- What We Do -->
+  <section>
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">How it works</span>
+        <h2>From records to<br>clinical intelligence</h2>
+        <p class="text-lg">Upload medical documents, let AI extract and organise the data, then generate expert health reports — all in one platform.</p>
+      </div>
+      <div class="pillars-grid reveal-stagger">
+        <div class="pillar-card">
+          <span class="pillar-number">Step 1</span>
+          <h3>Upload Records</h3>
+          <p>Upload lab reports, clinical documents, and medical PDFs. Our parser automatically extracts biomarkers, diagnoses, procedures, and genetic findings — no manual data entry required.</p>
+        </div>
+        <div class="pillar-card">
+          <span class="pillar-number">Step 2</span>
+          <h3>AI-Powered Extraction</h3>
+          <p>Structured clinical data is automatically organised into biomarkers, diagnoses, procedures, and genetics — with historical trends, reference ranges, and severity scoring built in.</p>
+        </div>
+        <div class="pillar-card">
+          <span class="pillar-number">Step 3</span>
+          <h3>Generate Reports</h3>
+          <p>Generate AI-powered health reports tailored to each patient — from comprehensive clinical analysis to biomarker trend tracking — surfacing the insights that matter most.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Platform in Action -->
+  <section class="platform-section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">The Platform</span>
+        <h2>See the platform in action.</h2>
+        <p class="text-lg">Track records, biomarkers, and AI-generated reports — all in a single, intuitive interface designed for clinical workflows.</p>
+      </div>
+
+      <!-- Tab buttons -->
+      <div class="platform-tabs reveal">
+        <button class="platform-tab active" data-tab="patients">
+          <svg viewBox="0 0 20 20" fill="none" width="16" height="16"><rect x="1" y="1" width="7.5" height="7.5" rx="1.5" stroke="currentColor" stroke-width="1.4"/><rect x="11.5" y="1" width="7.5" height="7.5" rx="1.5" stroke="currentColor" stroke-width="1.4"/><rect x="1" y="11.5" width="7.5" height="7.5" rx="1.5" stroke="currentColor" stroke-width="1.4"/><rect x="11.5" y="11.5" width="7.5" height="7.5" rx="1.5" stroke="currentColor" stroke-width="1.4"/></svg>
+          Patient Management
+        </button>
+        <button class="platform-tab" data-tab="uploads">
+          <svg viewBox="0 0 20 20" fill="none" width="16" height="16"><path d="M10 13V3m0 0L6 7m4-4l4 4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/><path d="M3 13v2a2 2 0 002 2h10a2 2 0 002-2v-2" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
+          File Uploads
+        </button>
+        <button class="platform-tab" data-tab="tracking">
+          <svg viewBox="0 0 20 20" fill="none" width="16" height="16"><path d="M3 17V7m4.5 10V3m4.5 14V9m4.5 8V5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+          Biomarker Tracking
+        </button>
+        <button class="platform-tab" data-tab="reports">
+          <svg viewBox="0 0 20 20" fill="none" width="16" height="16"><path d="M4 2h8l4 4v12a1 1 0 01-1 1H4a1 1 0 01-1-1V3a1 1 0 011-1z" stroke="currentColor" stroke-width="1.4"/><path d="M7 10h6M7 13h4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
+          Report Generation
+        </button>
+      </div>
+
+      <!-- Tab panels -->
+      <div class="platform-panels reveal">
+
+        <!-- Patient Management (Dashboard view) -->
+        <div class="platform-panel active" data-panel="patients">
+          <div class="platform-browser">
+            <div class="platform-chrome">
+              <div class="platform-chrome-dots"><span></span><span></span><span></span></div>
+              <div class="platform-chrome-url">app.n1.care/dashboard</div>
+            </div>
+            <div class="platform-app">
+              <!-- Sidebar -->
+              <div class="platform-sidebar">
+                <div class="platform-sidebar-logo"><img src="images/n1-logo.png" alt="N1" style="height: 20px; width: auto;"></div>
+                <div class="platform-sidebar-section">Overview</div>
+                <div class="platform-sidebar-item active">
+                  <svg viewBox="0 0 16 16" fill="none"><rect x="1" y="1" width="6" height="6" rx="1" stroke="currentColor" stroke-width="1.2"/><rect x="9" y="1" width="6" height="6" rx="1" stroke="currentColor" stroke-width="1.2"/><rect x="1" y="9" width="6" height="6" rx="1" stroke="currentColor" stroke-width="1.2"/><rect x="9" y="9" width="6" height="6" rx="1" stroke="currentColor" stroke-width="1.2"/></svg>
+                  Dashboard
+                </div>
+                <div class="platform-sidebar-section">Patient Management</div>
+                <div class="platform-sidebar-item">
+                  <svg viewBox="0 0 16 16" fill="none"><path d="M2 3h12M2 8h12M2 13h8" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
+                  Medical Records
+                </div>
+                <div class="platform-sidebar-item">
+                  <svg viewBox="0 0 16 16" fill="none"><rect x="2" y="1" width="12" height="14" rx="1.5" stroke="currentColor" stroke-width="1.2"/><path d="M5 5h6M5 8h4M5 11h5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
+                  Reports
+                </div>
+                <div class="platform-sidebar-section">Clinical Data</div>
+                <div class="platform-sidebar-item">
+                  <svg viewBox="0 0 16 16" fill="none"><path d="M2 12l3-6 3 3 3-8 3 5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  Biomarkers
+                </div>
+                <div class="platform-sidebar-item">
+                  <svg viewBox="0 0 16 16" fill="none"><circle cx="8" cy="5" r="3" stroke="currentColor" stroke-width="1.2"/><path d="M3 15c0-2.8 2.2-5 5-5s5 2.2 5 5" stroke="currentColor" stroke-width="1.2"/></svg>
+                  Diagnoses
+                </div>
+                <div class="platform-sidebar-spacer"></div>
+                <div class="platform-sidebar-user">
+                  <div class="platform-sidebar-avatar">DR</div>
+                  <div class="platform-sidebar-user-info">
+                    <span class="platform-sidebar-name">Dr. R. Chen</span>
+                    <span class="platform-sidebar-balance">$142.50</span>
+                  </div>
+                </div>
+              </div>
+              <!-- Main -->
+              <div class="platform-main">
+                <div class="platform-main-header">
+                  <div>
+                    <span class="platform-main-title">Dashboard</span>
+                    <span class="platform-patient-name">Sarah Mitchell, 42</span>
+                  </div>
+                  <div class="platform-main-actions">
+                    <span class="platform-btn platform-btn--outline">Upload Records</span>
+                    <span class="platform-btn platform-btn--primary">Generate Report</span>
+                  </div>
+                </div>
+                <!-- Stat cards -->
+                <div class="platform-stats">
+                  <div class="platform-stat" style="background: #dbeafe;"><div class="platform-stat-label" style="color: #1e40af;">Records</div><div class="platform-stat-value" style="color: #1e40af;">12</div></div>
+                  <div class="platform-stat" style="background: #f3e8ff;"><div class="platform-stat-label" style="color: #9333ea;">Reports</div><div class="platform-stat-value" style="color: #9333ea;">4</div></div>
+                  <div class="platform-stat" style="background: #d1fae5;"><div class="platform-stat-label" style="color: #059669;">Biomarkers</div><div class="platform-stat-value" style="color: #059669;">847</div></div>
+                  <div class="platform-stat" style="background: #fee2e2;"><div class="platform-stat-label" style="color: #dc2626;">Diagnoses</div><div class="platform-stat-value" style="color: #dc2626;">6</div></div>
+                  <div class="platform-stat" style="background: #fef3c7;"><div class="platform-stat-label" style="color: #d97706;">Procedures</div><div class="platform-stat-value" style="color: #d97706;">3</div></div>
+                  <div class="platform-stat" style="background: #e0e7ff;"><div class="platform-stat-label" style="color: #4f46e5;">Genetics</div><div class="platform-stat-value" style="color: #4f46e5;">18</div></div>
+                </div>
+                <!-- Quick actions -->
+                <div class="platform-quick-actions">
+                  <div class="platform-quick-card">
+                    <svg viewBox="0 0 20 20" fill="none" width="18" height="18"><path d="M10 13V3m0 0L6 7m4-4l4 4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/><path d="M3 13v2a2 2 0 002 2h10a2 2 0 002-2v-2" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
+                    <span>Upload Records</span>
+                    <small>2 processing</small>
+                  </div>
+                  <div class="platform-quick-card platform-quick-card--purple">
+                    <svg viewBox="0 0 20 20" fill="none" width="18" height="18"><rect x="3" y="1" width="14" height="18" rx="1.5" stroke="currentColor" stroke-width="1.4"/><path d="M7 7h6M7 10h4M7 13h5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
+                    <span>Generate Report</span>
+                  </div>
+                </div>
+                <!-- Recent reports -->
+                <div class="platform-section-header">
+                  <span>Recent Reports</span>
+                  <span class="platform-link">View All</span>
+                </div>
+                <div class="platform-recent-list">
+                  <div class="platform-recent-item">
+                    <span class="platform-recent-name">Precision Clinical Analysis</span>
+                    <span class="platform-recent-date">Feb 14, 2026</span>
+                    <span class="platform-badge platform-badge--green">Complete</span>
+                  </div>
+                  <div class="platform-recent-item">
+                    <span class="platform-recent-name">Executive Health Narrative</span>
+                    <span class="platform-recent-date">Feb 12, 2026</span>
+                    <span class="platform-badge platform-badge--purple">Generating 67%</span>
+                  </div>
+                  <div class="platform-recent-item">
+                    <span class="platform-recent-name">Longitudinal Biomarker Profile</span>
+                    <span class="platform-recent-date">Feb 10, 2026</span>
+                    <span class="platform-badge platform-badge--green">Complete</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Medical Records -->
+        <div class="platform-panel" data-panel="uploads">
+          <div class="platform-browser">
+            <div class="platform-chrome">
+              <div class="platform-chrome-dots"><span></span><span></span><span></span></div>
+              <div class="platform-chrome-url">app.n1.care/records</div>
+            </div>
+            <div class="platform-app">
+              <div class="platform-sidebar platform-sidebar--collapsed">
+                <div class="platform-sidebar-logo"><img src="images/n1-logo.png" alt="N1" style="height: 20px; width: auto; object-fit: cover; object-position: left; max-width: 24px;"></div>
+                <div class="platform-sidebar-item"><svg viewBox="0 0 16 16" fill="none"><rect x="1" y="1" width="6" height="6" rx="1" stroke="currentColor" stroke-width="1.2"/><rect x="9" y="1" width="6" height="6" rx="1" stroke="currentColor" stroke-width="1.2"/><rect x="1" y="9" width="6" height="6" rx="1" stroke="currentColor" stroke-width="1.2"/><rect x="9" y="9" width="6" height="6" rx="1" stroke="currentColor" stroke-width="1.2"/></svg></div>
+                <div class="platform-sidebar-item active"><svg viewBox="0 0 16 16" fill="none"><path d="M2 3h12M2 8h12M2 13h8" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg></div>
+                <div class="platform-sidebar-item"><svg viewBox="0 0 16 16" fill="none"><rect x="2" y="1" width="12" height="14" rx="1.5" stroke="currentColor" stroke-width="1.2"/><path d="M5 5h6M5 8h4M5 11h5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg></div>
+                <div class="platform-sidebar-item"><svg viewBox="0 0 16 16" fill="none"><path d="M2 12l3-6 3 3 3-8 3 5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+                <div class="platform-sidebar-spacer"></div>
+                <div class="platform-sidebar-avatar" style="margin: 0 auto;">DR</div>
+              </div>
+              <div class="platform-main">
+                <div class="platform-main-header">
+                  <span class="platform-main-title">Medical Records <span class="platform-count">12</span></span>
+                  <div class="platform-main-actions">
+                    <div class="platform-search-box">
+                      <svg viewBox="0 0 16 16" fill="none" width="14" height="14"><circle cx="7" cy="7" r="5" stroke="currentColor" stroke-width="1.3"/><path d="M11 11l3 3" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg>
+                      <span>Search records...</span>
+                    </div>
+                    <span class="platform-btn platform-btn--primary">Upload Records</span>
+                  </div>
+                </div>
+                <table class="platform-mock-table">
+                  <thead>
+                    <tr><th>Record Name</th><th>Uploaded</th><th>Test Date</th><th>Status</th><th>Insights</th></tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="platform-td-name">Blood Panel - Complete Metabolic</td>
+                      <td class="platform-td-muted">Feb 14, 2026</td>
+                      <td class="platform-td-muted">Feb 10, 2026</td>
+                      <td><span class="platform-badge platform-badge--green">Complete</span></td>
+                      <td><span class="platform-link">Insights</span></td>
+                    </tr>
+                    <tr>
+                      <td class="platform-td-name">Whole Exome Sequencing Report</td>
+                      <td class="platform-td-muted">Feb 12, 2026</td>
+                      <td class="platform-td-muted">Jan 28, 2026</td>
+                      <td><span class="platform-badge platform-badge--purple">Processing 72%</span></td>
+                      <td class="platform-td-muted">Parsing...</td>
+                    </tr>
+                    <tr>
+                      <td class="platform-td-name">Lipid Panel + CBC</td>
+                      <td class="platform-td-muted">Feb 8, 2026</td>
+                      <td class="platform-td-muted">Feb 5, 2026</td>
+                      <td><span class="platform-badge platform-badge--green">Complete</span></td>
+                      <td><span class="platform-link">Insights</span></td>
+                    </tr>
+                    <tr>
+                      <td class="platform-td-name">Thyroid Function Panel</td>
+                      <td class="platform-td-muted">Jan 30, 2026</td>
+                      <td class="platform-td-muted">Jan 25, 2026</td>
+                      <td><span class="platform-badge platform-badge--green">Complete</span></td>
+                      <td><span class="platform-link">Insights</span></td>
+                    </tr>
+                    <tr>
+                      <td class="platform-td-name">Pathology - Biopsy Report</td>
+                      <td class="platform-td-muted">Jan 22, 2026</td>
+                      <td class="platform-td-muted">Jan 15, 2026</td>
+                      <td><span class="platform-badge platform-badge--green">Complete</span></td>
+                      <td><span class="platform-link">Insights</span></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Biomarker Tracking -->
+        <div class="platform-panel" data-panel="tracking">
+          <div class="platform-browser">
+            <div class="platform-chrome">
+              <div class="platform-chrome-dots"><span></span><span></span><span></span></div>
+              <div class="platform-chrome-url">app.n1.care/biomarkers</div>
+            </div>
+            <div class="platform-app">
+              <div class="platform-sidebar platform-sidebar--collapsed">
+                <div class="platform-sidebar-logo"><img src="images/n1-logo.png" alt="N1" style="height: 20px; width: auto; object-fit: cover; object-position: left; max-width: 24px;"></div>
+                <div class="platform-sidebar-item"><svg viewBox="0 0 16 16" fill="none"><rect x="1" y="1" width="6" height="6" rx="1" stroke="currentColor" stroke-width="1.2"/><rect x="9" y="1" width="6" height="6" rx="1" stroke="currentColor" stroke-width="1.2"/><rect x="1" y="9" width="6" height="6" rx="1" stroke="currentColor" stroke-width="1.2"/><rect x="9" y="9" width="6" height="6" rx="1" stroke="currentColor" stroke-width="1.2"/></svg></div>
+                <div class="platform-sidebar-item"><svg viewBox="0 0 16 16" fill="none"><path d="M2 3h12M2 8h12M2 13h8" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg></div>
+                <div class="platform-sidebar-item"><svg viewBox="0 0 16 16" fill="none"><rect x="2" y="1" width="12" height="14" rx="1.5" stroke="currentColor" stroke-width="1.2"/><path d="M5 5h6M5 8h4M5 11h5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg></div>
+                <div class="platform-sidebar-item active"><svg viewBox="0 0 16 16" fill="none"><path d="M2 12l3-6 3 3 3-8 3 5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+                <div class="platform-sidebar-spacer"></div>
+                <div class="platform-sidebar-avatar" style="margin: 0 auto;">DR</div>
+              </div>
+              <div class="platform-main">
+                <div class="platform-main-header">
+                  <span class="platform-main-title">Biomarkers <span class="platform-count">847</span></span>
+                  <div class="platform-main-actions">
+                    <div class="platform-search-box">
+                      <svg viewBox="0 0 16 16" fill="none" width="14" height="14"><circle cx="7" cy="7" r="5" stroke="currentColor" stroke-width="1.3"/><path d="M11 11l3 3" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg>
+                      <span>Search biomarkers...</span>
+                    </div>
+                    <div class="platform-filter-pill">All Sources</div>
+                  </div>
+                </div>
+                <table class="platform-mock-table">
+                  <thead>
+                    <tr><th>Name</th><th>Source</th><th>Insights</th></tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="platform-td-name">Glucose</td>
+                      <td><span class="platform-source-badge">Blood</span></td>
+                      <td><span class="platform-link">View all 8</span></td>
+                    </tr>
+                    <tr>
+                      <td class="platform-td-name">HbA1c</td>
+                      <td><span class="platform-source-badge">Blood</span></td>
+                      <td><span class="platform-link">View all 12</span></td>
+                    </tr>
+                    <tr>
+                      <td class="platform-td-name">Total Cholesterol</td>
+                      <td><span class="platform-source-badge">Serum</span></td>
+                      <td><span class="platform-link">View all 6</span></td>
+                    </tr>
+                    <tr>
+                      <td class="platform-td-name">TSH</td>
+                      <td><span class="platform-source-badge">Serum</span></td>
+                      <td><span class="platform-link">View all 5</span></td>
+                    </tr>
+                    <tr>
+                      <td class="platform-td-name">Vitamin D (25-OH)</td>
+                      <td><span class="platform-source-badge">Blood</span></td>
+                      <td><span class="platform-link">View all 4</span></td>
+                    </tr>
+                  </tbody>
+                </table>
+                <!-- Expanded biomarker detail -->
+                <div class="platform-expanded-row">
+                  <div class="platform-expanded-header">
+                    <strong>HbA1c</strong> — 12 readings from Blood
+                  </div>
+                  <div class="platform-chart-mock">
+                    <div class="platform-chart-area">
+                      <div class="platform-chart-y-axis"><span>7.0</span><span>6.0</span><span>5.0</span><span>4.0</span></div>
+                      <svg class="platform-chart-svg" viewBox="0 0 500 140" preserveAspectRatio="none">
+                        <rect x="0" y="50" width="500" height="55" fill="rgba(16, 185, 129, 0.06)"/>
+                        <line x1="0" y1="50" x2="500" y2="50" stroke="rgba(16, 185, 129, 0.2)" stroke-dasharray="4"/>
+                        <line x1="0" y1="105" x2="500" y2="105" stroke="rgba(16, 185, 129, 0.2)" stroke-dasharray="4"/>
+                        <polyline points="30,15 100,30 180,42 260,35 340,48 420,62 480,75" fill="none" stroke="#196067" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <circle cx="30" cy="15" r="3.5" fill="#196067"/><circle cx="100" cy="30" r="3.5" fill="#196067"/><circle cx="180" cy="42" r="3.5" fill="#196067"/><circle cx="260" cy="35" r="3.5" fill="#196067"/><circle cx="340" cy="48" r="3.5" fill="#196067"/><circle cx="420" cy="62" r="3.5" fill="#196067"/><circle cx="480" cy="75" r="3.5" fill="#10b981"/>
+                      </svg>
+                    </div>
+                    <div class="platform-chart-x-axis"><span>Mar</span><span>May</span><span>Jul</span><span>Sep</span><span>Nov</span><span>Jan</span><span>Feb</span></div>
+                    <div class="platform-chart-latest">
+                      <span class="platform-chart-value">5.4%</span>
+                      <span class="platform-badge platform-badge--green">In range</span>
+                      <span class="platform-chart-delta">Ref: 4.0 – 5.6%</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Report Generation -->
+        <div class="platform-panel" data-panel="reports">
+          <div class="platform-browser">
+            <div class="platform-chrome">
+              <div class="platform-chrome-dots"><span></span><span></span><span></span></div>
+              <div class="platform-chrome-url">app.n1.care/reports</div>
+            </div>
+            <div class="platform-app">
+              <div class="platform-sidebar platform-sidebar--collapsed">
+                <div class="platform-sidebar-logo"><img src="images/n1-logo.png" alt="N1" style="height: 20px; width: auto; object-fit: cover; object-position: left; max-width: 24px;"></div>
+                <div class="platform-sidebar-item"><svg viewBox="0 0 16 16" fill="none"><rect x="1" y="1" width="6" height="6" rx="1" stroke="currentColor" stroke-width="1.2"/><rect x="9" y="1" width="6" height="6" rx="1" stroke="currentColor" stroke-width="1.2"/><rect x="1" y="9" width="6" height="6" rx="1" stroke="currentColor" stroke-width="1.2"/><rect x="9" y="9" width="6" height="6" rx="1" stroke="currentColor" stroke-width="1.2"/></svg></div>
+                <div class="platform-sidebar-item"><svg viewBox="0 0 16 16" fill="none"><path d="M2 3h12M2 8h12M2 13h8" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg></div>
+                <div class="platform-sidebar-item active"><svg viewBox="0 0 16 16" fill="none"><rect x="2" y="1" width="12" height="14" rx="1.5" stroke="currentColor" stroke-width="1.2"/><path d="M5 5h6M5 8h4M5 11h5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg></div>
+                <div class="platform-sidebar-item"><svg viewBox="0 0 16 16" fill="none"><path d="M2 12l3-6 3 3 3-8 3 5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+                <div class="platform-sidebar-spacer"></div>
+                <div class="platform-sidebar-avatar" style="margin: 0 auto;">DR</div>
+              </div>
+              <div class="platform-main">
+                <div class="platform-main-header">
+                  <span class="platform-main-title">Reports <span class="platform-count">4</span></span>
+                </div>
+                <!-- Report type marketplace -->
+                <div class="platform-report-marketplace">
+                  <div class="platform-report-card">
+                    <svg viewBox="0 0 20 20" fill="none" width="20" height="20"><rect x="3" y="1" width="14" height="18" rx="1.5" stroke="currentColor" stroke-width="1.3"/><path d="M7 6h6M7 9h4M7 12h5" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg>
+                    <strong>Precision Clinical Health Analysis</strong>
+                    <p>Comprehensive AI-powered health analysis with clinical insights and recommendations.</p>
+                    <div class="platform-report-card-footer">
+                      <span class="platform-badge platform-badge--muted">HTML</span>
+                      <span class="platform-btn platform-btn--sm">Generate</span>
+                    </div>
+                  </div>
+                  <div class="platform-report-card">
+                    <svg viewBox="0 0 20 20" fill="none" width="20" height="20"><path d="M10 2l1.5 3 3.5.5-2.5 2.5.5 3.5L10 10l-3 1.5.5-3.5L5 5.5 8.5 5z" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/></svg>
+                    <strong>Executive Health Intelligence</strong>
+                    <p>Customisable biomarker trends with narrative health intelligence summary.</p>
+                    <div class="platform-report-card-footer">
+                      <span class="platform-badge platform-badge--muted">HTML</span>
+                      <span class="platform-btn platform-btn--sm">Generate</span>
+                    </div>
+                  </div>
+                  <div class="platform-report-card">
+                    <svg viewBox="0 0 20 20" fill="none" width="20" height="20"><path d="M3 17V7m4.5 10V3m4.5 14V9m4.5 8V5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                    <strong>Longitudinal Biomarker Profile</strong>
+                    <span class="platform-badge platform-badge--red">Beta</span>
+                    <p>Visual and narrative representation of biomarker trends over time.</p>
+                    <div class="platform-report-card-footer">
+                      <span class="platform-badge platform-badge--muted">HTML</span>
+                      <span class="platform-btn platform-btn--sm">Generate</span>
+                    </div>
+                  </div>
+                </div>
+                <!-- Generated reports table -->
+                <div class="platform-section-header" style="margin-top: 1.25rem;">
+                  <span>Generated Reports</span>
+                </div>
+                <table class="platform-mock-table">
+                  <thead>
+                    <tr><th>Report Name</th><th>Created</th><th>Status</th></tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="platform-td-name">Precision Clinical Analysis <span class="platform-badge platform-badge--muted" style="margin-left: 4px; font-size: 0.55rem;">CC</span></td>
+                      <td class="platform-td-muted">Feb 14, 2026</td>
+                      <td><span class="platform-badge platform-badge--green">Complete</span></td>
+                    </tr>
+                    <tr>
+                      <td class="platform-td-name">Executive Health Narrative <span class="platform-badge platform-badge--muted" style="margin-left: 4px; font-size: 0.55rem;">EasyCHR</span></td>
+                      <td class="platform-td-muted">Feb 12, 2026</td>
+                      <td><span class="platform-badge platform-badge--purple">Generating 67%</span></td>
+                    </tr>
+                    <tr>
+                      <td class="platform-td-name">Longitudinal Biomarker Profile <span class="platform-badge platform-badge--muted" style="margin-left: 4px; font-size: 0.55rem;">Graphs</span></td>
+                      <td class="platform-td-muted">Feb 10, 2026</td>
+                      <td><span class="platform-badge platform-badge--green">Complete</span></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Reports -->
+  <section>
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Reports</span>
+        <h2>Multiple report types.<br>One platform.</h2>
+        <p class="text-lg">Every patient is different. N1 offers a range of AI-powered report types — each with a distinct clinical lens — so you can choose the insight that fits.</p>
+      </div>
+      <div class="chapters-grid reveal-stagger">
+        <div class="chapter-card">
+          <!-- Mini snapshot: SBAR + metrics -->
+          <div class="mini-snapshot">
+            <div class="mini-snapshot-row">
+              <div class="mini-sbar"><span class="mini-dot" style="background:#DC2626"></span><strong>S</strong> Multi-system dysfunction</div>
+              <div class="mini-sbar"><span class="mini-dot" style="background:#D97706"></span><strong>B</strong> 10-year longitudinal data</div>
+            </div>
+            <div class="mini-snapshot-row">
+              <div class="mini-sbar"><span class="mini-dot" style="background:#16A34A"></span><strong>A</strong> Infection-driven overload</div>
+              <div class="mini-sbar"><span class="mini-dot" style="background:var(--accent)"></span><strong>R</strong> GI evaluation, consult</div>
+            </div>
+            <div class="mini-metrics">
+              <span class="mini-metric"><em>Ferritin</em> <strong class="snapshot-red">19</strong></span>
+              <span class="mini-metric"><em>Insulin</em> <strong class="snapshot-red">28.3</strong></span>
+              <span class="mini-metric"><em>HbA1c</em> <strong class="snapshot-green">5.6%</strong></span>
+            </div>
+          </div>
+          <h4>Precision Clinical Health Analysis</h4>
+          <p>Comprehensive AI-powered health analysis with detailed clinical insights and evidence-based recommendations.</p>
+          <a href="health-report.html" class="btn btn-ghost" style="margin-top: 0.5rem;">See full report</a>
+        </div>
+        <div class="chapter-card">
+          <!-- Mini snapshot: sparkline charts -->
+          <div class="mini-snapshot">
+            <div class="mini-charts">
+              <div class="mini-chart">
+                <span class="mini-chart-label">Ferritin <strong class="snapshot-red">19 &#8595;</strong></span>
+                <svg viewBox="0 0 120 28" class="mini-sparkline"><path d="M2,4 C12,4 22,7 35,10 C48,13 62,17 78,21 C90,24 105,26 118,27" fill="none" stroke="#DC2626" stroke-width="1.5"/><circle cx="118" cy="27" r="2" fill="#DC2626"/></svg>
+              </div>
+              <div class="mini-chart">
+                <span class="mini-chart-label">Vitamin D <strong class="snapshot-green">72 &#8593;</strong></span>
+                <svg viewBox="0 0 120 28" class="mini-sparkline"><path d="M2,25 C15,22 28,18 42,14 C56,10 70,8 85,6 C98,4 110,3 118,3" fill="none" stroke="#16A34A" stroke-width="1.5"/><circle cx="118" cy="3" r="2" fill="#16A34A"/></svg>
+              </div>
+              <div class="mini-chart">
+                <span class="mini-chart-label">D-Dimer <strong class="snapshot-amber">570 &#8593;</strong></span>
+                <svg viewBox="0 0 120 28" class="mini-sparkline"><path d="M2,20 C15,16 28,22 42,14 C56,10 70,16 85,8 C98,12 110,6 118,5" fill="none" stroke="#D97706" stroke-width="1.5"/><circle cx="118" cy="5" r="2" fill="#D97706"/></svg>
+              </div>
+              <div class="mini-chart">
+                <span class="mini-chart-label">HbA1c <strong class="snapshot-green">5.6%</strong></span>
+                <svg viewBox="0 0 120 28" class="mini-sparkline"><path d="M2,14 C15,13 28,15 42,13 C56,12 70,14 85,13 C98,12 110,13 118,13" fill="none" stroke="#16A34A" stroke-width="1.5"/><circle cx="118" cy="13" r="2" fill="#16A34A"/></svg>
+              </div>
+            </div>
+          </div>
+          <h4>Longitudinal Biomarker Profile</h4>
+          <p>Visual and narrative representation of health data trends with interactive charts and analytics.</p>
+          <a href="health-report.html" class="btn btn-ghost" style="margin-top: 0.5rem;">See full report</a>
+        </div>
+        <div class="chapter-card">
+          <!-- Mini snapshot: PDF multi-perspective -->
+          <div class="mini-snapshot mini-snapshot--pdf">
+            <div class="mini-pdf-page">
+              <div class="mini-pdf-heading">Cardiologist</div>
+              <p>D-Dimer elevated — coronary calcium scoring recommended.</p>
+              <div class="mini-pdf-heading">Nephrologist</div>
+              <p>Early filtration decline — monitor CKD-CVD interplay.</p>
+              <div class="mini-pdf-heading">Endocrinologist</div>
+              <p>Insulin resistance developing — early intervention advised.</p>
+            </div>
+            <span class="snapshot-badge-pdf">PDF</span>
+          </div>
+          <h4>Advanced Multi-Perspective Review</h4>
+          <p>Multi-agent AI analysis providing diverse clinical perspectives on your health data.</p>
+          <a href="health-report.html" class="btn btn-ghost" style="margin-top: 0.5rem;">See full report</a>
+        </div>
+      </div>
+      <div style="margin-top: 3rem;" class="reveal">
+        <a href="health-report.html" class="btn btn-ghost">Learn more about reports</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Image Band with Overlay -->
+  <section class="image-band--overlay reveal">
+    <img src="https://images.unsplash.com/photo-1557682250-33bd709cbe85?w=1600&h=500&fit=crop&crop=center&q=80" alt="Abstract gradient with smooth teal and blue tones" loading="lazy">
+    <div class="image-band-overlay">
+      <div class="image-band-text">
+        <h3>Trusted by clinicians who want clarity.</h3>
+        <p>From independent practitioners to health organisations — N1 turns complexity into confidence.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Company Teaser -->
+  <section class="teaser">
+    <div class="container">
+      <div class="teaser-inner reveal">
+        <div>
+          <span class="section-label">About N1</span>
+          <h2>Cross-disciplinary.<br>Science-driven.</h2>
+          <p class="text-muted" style="margin-top: 1rem;">We are a cross-disciplinary team of clinicians, data scientists, AI engineers, and health optimisation experts. We are passionate about precision health, and we believe the best medicine is proactive, not reactive.</p>
+          <p class="text-muted" style="margin-top: 1rem;">Our team has trained at leading institutions, worked across multiple domains of longevity, diagnostics, clinical decision-making, and AI development. Everything we build is grounded in rigorous science and tested logic.</p>
+          <a href="about.html" class="btn btn-ghost" style="margin-top: 1.5rem;">Learn about us</a>
+        </div>
+        <!-- TODO: teaser visual — revisit design -->
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Trust & Security -->
+  <section class="trust-section">
+    <div class="container">
+      <div class="section-header reveal" style="text-align: center;">
+        <span class="section-label">Security & Compliance</span>
+        <h2>Built for clinical-grade trust.</h2>
+        <p class="text-lg" style="margin: 1rem auto 0;">Your patients' data demands the highest standards. We treat security not as a checkbox but as a foundational design principle.</p>
+      </div>
+
+      <div class="trust-badges reveal-stagger">
+        <div class="trust-badge">
+          <div class="trust-badge-icon">
+            <svg viewBox="0 0 48 48" fill="none"><path d="M24 4L6 12v12c0 11.1 7.8 21.5 18 24 10.2-2.5 18-12.9 18-24V12L24 4z" stroke="currentColor" stroke-width="2.5" fill="none"/><path d="M16 24l6 6 10-12" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h4>HIPAA Compliant</h4>
+          <p>Full administrative, physical, and technical safeguards</p>
+        </div>
+        <div class="trust-badge">
+          <div class="trust-badge-icon">
+            <svg viewBox="0 0 48 48" fill="none"><rect x="6" y="6" width="36" height="36" rx="8" stroke="currentColor" stroke-width="2.5"/><path d="M18 20h12M18 28h8" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><circle cx="34" cy="34" r="8" fill="var(--bg-alt)" stroke="currentColor" stroke-width="2.5"/><path d="M32 34l2 2 4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h4>Multi-Factor Authentication</h4>
+          <p>TOTP, hardware keys, and backup codes built in</p>
+        </div>
+        <div class="trust-badge">
+          <div class="trust-badge-icon">
+            <svg viewBox="0 0 48 48" fill="none"><rect x="10" y="20" width="28" height="22" rx="3" stroke="currentColor" stroke-width="2.5"/><path d="M16 20v-6a8 8 0 1116 0v6" stroke="currentColor" stroke-width="2.5"/><circle cx="24" cy="32" r="3" stroke="currentColor" stroke-width="2.5"/></svg>
+          </div>
+          <h4>Encrypted at Rest &amp; In Transit</h4>
+          <p>XChaCha20-Poly1305 at rest, TLS in transit</p>
+        </div>
+        <div class="trust-badge">
+          <div class="trust-badge-icon">
+            <svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="18" stroke="currentColor" stroke-width="2.5"/><path d="M24 14v10l7 7" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h4>Audit Logging</h4>
+          <p>Every authentication event and data access logged with full trail</p>
+        </div>
+      </div>
+
+      <div class="trust-details reveal-stagger">
+        <div class="trust-detail">
+          <h4>Clinician Control</h4>
+          <p>Every AI-generated output is fully editable. Nothing reaches a patient without explicit clinician sign-off — your expertise is always the final authority.</p>
+        </div>
+        <div class="trust-detail">
+          <h4>Access Controls</h4>
+          <p>Role-based access with automatic session timeouts. Multi-factor authentication available. Patient data is scoped to authorised clinicians only.</p>
+        </div>
+        <div class="trust-detail">
+          <h4>Data Sovereignty</h4>
+          <p>Your data stays yours. We never sell patient information. Records are stored in encrypted cloud infrastructure with signed, time-limited access URLs.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section>
+    <div class="container">
+      <div class="section-header reveal" style="text-align: center;">
+        <span class="section-label">FAQ</span>
+        <h2>Common questions.</h2>
+      </div>
+      <div class="faq-list" style="margin-bottom: 2.5rem;">
+
+        <div class="faq-item reveal">
+          <button class="faq-question" aria-expanded="false">
+            <span>Who is n1.care for?</span>
+            <svg viewBox="0 0 24 24" fill="none" width="20" height="20"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </button>
+          <div class="faq-answer">
+            <p>n1.care is designed for licensed healthcare professionals who want to streamline the process of interpreting complex patient data and delivering personalised care.</p>
+          </div>
         </div>
-        <a href="mailto:longevity@n1.healthcare" class="loginbtn">
-          Contact us
-        </a>
-      </nav>
-    </div>
-  </header>
-  <!-- Header end -->
 
-  <!-- banner start -->
-  <section class="bannersect">
-    <img src="images/banner-1.png" alt="" class="bnr_img">
-    <div class="absolute_bnr_cont">
-      <div class="container">
-        <div class="bantextcont homcontextxt">
-          <h1>N1 Healthcare: Pioneering Your
-            Path to a Longer, Healthier Life.</h1>
-          <!-- <div class="formflex">
-            <input type="email" class="form-control" placeholder=" Email" />
-            <button class="loginbtn">Contact us</button>
-          </div> -->
+        <div class="faq-item reveal">
+          <button class="faq-question" aria-expanded="false">
+            <span>Is the AI making clinical decisions?</span>
+            <svg viewBox="0 0 24 24" fill="none" width="20" height="20"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>No. The AI provides draft summaries, reports, and interpretations, but only the licensed clinician determines what is included in the final report. Every output is fully editable and requires clinician sign-off.</p>
+          </div>
         </div>
+
+        <div class="faq-item reveal">
+          <button class="faq-question" aria-expanded="false">
+            <span>What types of data can I upload?</span>
+            <svg viewBox="0 0 24 24" fill="none" width="20" height="20"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>You can upload lab results, imaging reports, medical records, genetics reports, and clinical notes. Files can be in PDF, image, or text format.</p>
+          </div>
+        </div>
+
+        <div class="faq-item reveal">
+          <button class="faq-question" aria-expanded="false">
+            <span>Is my data secure?</span>
+            <svg viewBox="0 0 24 24" fill="none" width="20" height="20"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>Absolutely. All data is encrypted at rest (XChaCha20-Poly1305) and in transit (TLS). We support multi-factor authentication, enforce rate limiting on all endpoints, and maintain comprehensive audit logs. We are HIPAA compliant.</p>
+          </div>
+        </div>
+
+        <div class="faq-item reveal">
+          <button class="faq-question" aria-expanded="false">
+            <span>How do I get started?</span>
+            <svg viewBox="0 0 24 24" fill="none" width="20" height="20"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>Simply sign up at <a href="https://app.n1.care" style="color: var(--accent); font-weight: 500;">app.n1.care</a> with your medical credentials. Once verified, you can start uploading records and generating reports immediately.</p>
+          </div>
+        </div>
+
+      </div>
+      <div style="text-align: center;" class="reveal">
+        <a href="faq.html" class="btn btn-ghost">View all FAQ</a>
       </div>
     </div>
   </section>
-  <!-- banner end -->
 
-  <!-- start pioneeringsection -->
-  <section class="pioneeringsection">
-    <img class="wevimg" src="images/wev1.png" alt="" />
-    <div class="container">
-      <div class="headingsect">
-        <h2>Pioneering your path to a longer, healthier life</h2>
-        <p>At N1 Healthcare, we are redefining the landscape of personalized medical care. Our mission is to
-          provide unparalleled, individualized health insights to our discerning clients, offering a deeper
-          understanding of their unique health profiles. Our comprehensive health reports are meticulously
-          crafted, not just as documents, but as evolving blueprints for your lifelong well-being.</p>
-        <p>We believe that the future of healthcare is deeply personal. It's not just about treating symptoms; it's
-          about understanding the intricate tapestry of genetics, lifestyle, and environment that makes you, you.
-          With our extensive health reports, we dive deep into your family medical history, analyze your DNA to
-          predict health risks, and thoroughly evaluate your lifestyle, nutrition, existing conditions and all your
-          medical tests.</p>
-        <p>Our global team of specialized clinicians and technical writers brings together a wealth of expertise and
-          experience. This diverse team works in harmony to deliver a service that is as unique as our clients,
-          continually updating and refining each health report to reflect the latest medical developments and your
-          evolving health needs.</p>
-        <p>In a world where healthcare often takes a one-size-fits-all approach, N1 Healthcare offers a different
-          path – a path where every decision and recommendation is tailored to your personal health journey.
-          Join us in this journey towards a healthier, longer life.</p>
-        <a href="about.html" class="loginbtn"> Read More</a>
-      </div>
-    </div>
-    <div class="sceallsect">
-      <img class="imgbottom" src="images/sceallimg.png" alt="" />
-      <img class="offwev" src="images/wev2.png" alt="" />
+  <!-- CTA Banner -->
+  <section class="cta-banner cta-banner--dark">
+    <div class="container reveal">
+      <h2>Ready to transform your<br>clinical workflow?</h2>
+      <p>Start generating AI-powered health reports for your patients today.</p>
+      <a href="https://app.n1.care" class="btn btn-primary">Get started</a>
     </div>
   </section>
-  <!-- end pioneeringsection -->
 
-  <!-- start offeringsect -->
-  <section class="offeringsect index_offering">
+  <!-- Footer -->
+  <footer class="footer">
     <div class="container">
-      <div class="offeringheading">
-        <h5>This service is the epitome of personalized healthcare</h5>
-        <h2>At N1 Healthcare Ltd., our premier offering is the Comprehensive Health Report, a meticulous and
-          expansive review of your entire health history. This service is the epitome of personalized healthcare,
-          designed to offer you a profound understanding of your health journey</h2>
-      </div>
-      <div class="offlist">
-        <div class="offerflexbox">
-          <div class="officon">
-            <img src="images/i1.svg" alt="">
-          </div>
-          <div class="offheading">
-            <h3>In Depth Analysis of Your Medical History</h3>
-          </div>
-          <div class="offcont">
-            <p> Our reports are unique in their thoroughness. They
-              include a comprehensive review of all your present and past medical tests, covering every aspect of
-              your health journey. From routine blood tests to advanced diagnostic imaging, every piece of medical
-              data is carefully examined.</p>
-          </div>
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <div class="nav-logo"><img src="images/n1-logo.png" alt="N1 Healthcare"></div>
+          <p>AI-powered clinical health intelligence — turning medical records into actionable insights for clinicians and their patients.</p>
         </div>
-
-        <div class="offerflexbox">
-          <div class="officon">
-            <img src="images/i2.svg" alt="">
+        <div class="footer-links">
+          <div class="footer-col">
+            <h4>Product</h4>
+            <a href="how-it-works.html">How It Works</a>
+            <a href="health-report.html">Reports</a>
+            <a href="pricing.html">Pricing</a>
+            <a href="https://app.n1.care">Get Started</a>
           </div>
-          <div class="offheading">
-            <h3>Tailored to Your Unique Health Profile</h3>
-          </div>
-          <div class="offcont">
-            <p>We believe that your health story is as unique as you are.
-              Our team of experts analyzes your family medical history, lifestyle, nutrition, medical history, and even
-              your DNA sequence to uncover insights into your health. This holistic approach ensures that no aspect
-              of your wellbeing is overlooked.</p>
-          </div>
-        </div>
-
-        <div class="offerflexbox">
-          <div class="officon">
-            <img src="images/i3.svg" alt="">
-          </div>
-          <div class="offheading">
-            <h3>Dynamic and Continuously Updated</h3>
-          </div>
-          <div class="offcont">
-            <p>We understand that health is an evolving narrative. Therefore,
-              our reports are dynamic, regularly updated with new medical findings, test results, and health data. This
-              ongoing process ensures that your health strategy is always aligned with the latest medical advancements
-              and
-              your current health status.</p>
-          </div>
-        </div>
-
-        <div class="offerflexbox">
-          <div class="officon">
-            <img src="images/i4.svg" alt="">
-          </div>
-          <div class="offheading">
-            <h3>Global Expertise for Localized Care</h3>
-          </div>
-          <div class="offcont">
-            <p>Our team, comprising elite technical writers and clinicians
-              from around the world, brings diverse global medical knowledge to your report. This collective expertise
-              ensures that your health analysis is grounded in the latest global health trends and practices.</p>
-          </div>
-        </div>
-
-        <div class="offerflexbox">
-          <div class="officon">
-            <img src="images/if.svg" alt="">
-          </div>
-          <div class="offheading">
-            <h3>Empowerment through Knowledge</h3>
-          </div>
-          <div class="offcont">
-            <p>Our Comprehensive Health Reports are more than just
-              documents; they are tools for empowerment. By providing you with an in-depth understanding of your
-              health, we enable you to make informed decisions about your healthcare and lifestyle, paving the way
-              for a healthier future.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- end offeringsect -->
-
-
-
-  <!-- start footer -->
-  <footer>
-    <div class="container">
-      <div class="footheading">
-        <h5>Join us at N1 Healthcare</h5>
-        <h2>Where we turn your health data
-          into actionable insights, helping you
-          chart a course towards a healthier,
-          more informed life</h2>
-      </div>
-      <!-- <div class="formflex">
-        <input type="email" class="form-control" placeholder=" Email">
-        <button class="loginbtn">Submit</button>
-      </div> -->
-      <div class="footmenuflx">
-        <a href="index.html" class="footlogo"><img src="images/logo.png" alt=""></a>
-        <ul class="fmenulist">
-          <li>
-            <a href="about.html"> About Us</a>
-          </li>
-          <li>
-            <a href="services.html">Our Services</a>
-          </li>
-          <li>
-            <a href="health_report.html">The Health Report</a>
-          </li>
-          <li>
-            <a href="our_team.html">Our Team</a>
-          </li>
-          <li>
+          <div class="footer-col">
+            <h4>Company</h4>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
             <a href="faq.html">FAQ</a>
-          </li>
-        </ul>
-        <a href="mailto:longevity@n1.healthcare" class="ftemail">Email : longevity@n1.healthcare</a>
+          </div>
+          <div class="footer-col">
+            <h4>Legal</h4>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="terms.html">Terms of Service</a>
+          </div>
+        </div>
       </div>
-      <p class="copy_right"><a href="privacy_policy.html">Privacy Policy</a></p>
+      <div class="footer-bottom">
+        &copy; 2026 N1 Healthcare. All rights reserved.
+      </div>
     </div>
   </footer>
-  <!-- end footer -->
 
-  <script src="js/jquery-3.6.4.min.js"></script>
-  <script src="https://kit.fontawesome.com/ab591c4248.js" crossorigin="anonymous"></script>
-  <script src="js/bootstrap.bundle.min.js"></script>
-  <script src="js/slick.min.js"></script>
-  <script src="js/custom.js"></script>
+  <script src="main.js"></script>
 </body>
-
 </html>
