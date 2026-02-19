@@ -758,8 +758,6 @@ section {
   flex-direction: column;
   gap: 6px;
   margin-bottom: 1rem;
-  flex: 1;
-  justify-content: center;
 }
 
 .process-doc-lines span {
@@ -774,10 +772,14 @@ section {
   background: #e5e7eb;
   border-radius: 2px;
   overflow: hidden;
+  margin-top: auto;
 }
 
 /* Content fades out after progress bar fills */
 .process-doc-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
   animation: docContentOut 0.35s ease forwards;
   animation-delay: 2s;
 }
@@ -1770,7 +1772,7 @@ section {
 
 .teaser-svg {
   width: 100%;
-  max-width: 360px;
+  max-width: 480px;
 }
 
 .teaser-svg text {
