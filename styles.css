@@ -758,8 +758,6 @@ section {
   flex-direction: column;
   gap: 6px;
   margin-bottom: 1rem;
-  flex: 1;
-  justify-content: center;
 }
 
 .process-doc-lines span {
@@ -774,10 +772,14 @@ section {
   background: #e5e7eb;
   border-radius: 2px;
   overflow: hidden;
+  margin-top: auto;
 }
 
 /* Content fades out after progress bar fills */
 .process-doc-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
   animation: docContentOut 0.35s ease forwards;
   animation-delay: 2s;
 }
@@ -1770,12 +1772,51 @@ section {
 
 .teaser-svg {
   width: 100%;
-  max-width: 360px;
+  max-width: 480px;
 }
 
 .teaser-svg text {
   font-family: var(--font);
 }
+
+.teaser-layer {
+  stroke-width: 1.5;
+}
+
+.teaser-layer--clinicians { fill: #0d737710; stroke: var(--accent); opacity: 0.8; }
+.teaser-layer--engineers { fill: #6366f108; stroke: #6366f1; opacity: 0.7; }
+.teaser-layer--scientists { fill: #16a34a08; stroke: #16a34a; opacity: 0.7; }
+.teaser-layer--optimisation { fill: #f59e0b08; stroke: #f59e0b; opacity: 0.7; }
+
+.teaser-axis {
+  stroke: #22303015;
+  stroke-width: 1;
+  stroke-dasharray: 4;
+}
+
+.teaser-dot {
+  fill: var(--accent);
+  opacity: 0.7;
+}
+
+.teaser-connector {
+  stroke-width: 1;
+}
+
+.teaser-connector--clinicians { stroke: #0d737740; }
+.teaser-connector--engineers { stroke: #6366f140; }
+.teaser-connector--scientists { stroke: #16a34a40; }
+.teaser-connector--optimisation { stroke: #f59e0b40; }
+
+.teaser-label {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.teaser-label--clinicians { fill: var(--accent); }
+.teaser-label--engineers { fill: #6366f1; }
+.teaser-label--scientists { fill: #16a34a; }
+.teaser-label--optimisation { fill: #f59e0b; }
 
 .teaser-dot--1 { animation: teaserFloat 6s ease-in-out infinite; }
 .teaser-dot--2 { animation: teaserFloat 7s ease-in-out 1s infinite; }

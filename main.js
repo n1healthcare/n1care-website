@@ -67,7 +67,6 @@ document.addEventListener('DOMContentLoaded', () => {
   // --- Process Animation (Upload → Extract → Report → Success) ---
   let processTimer = null;
   const STAGE_DURATION = 3800; // ms per stage
-  const SUCCESS_DURATION = 2200; // shorter for success
 
   function startProcessAnim() {
     stopProcessAnim();
@@ -78,7 +77,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const stepInds = container.querySelectorAll('.process-step-ind');
     const stepLines = container.querySelectorAll('.process-step-line');
     let current = 0;
-    const TOTAL_STAGES = 4; // upload, extract, report, success
+    const TOTAL_STAGES = 3; // upload, extract, report
 
     function showStage(index) {
       // Hide all stages
@@ -86,13 +85,12 @@ document.addEventListener('DOMContentLoaded', () => {
       // Show target
       stages[index].classList.add('active');
 
-      // Update step indicators (all 3 stay lit during success)
-      const indIndex = index === 3 ? 2 : index;
+      // Update step indicators
       stepInds.forEach((ind, i) => {
-        ind.classList.toggle('active', i <= indIndex);
+        ind.classList.toggle('active', i <= index);
       });
       stepLines.forEach((line, i) => {
-        line.classList.toggle('filled', i < indIndex);
+        line.classList.toggle('filled', i < index);
       });
 
       // Re-trigger animations on the extract card rows
@@ -122,16 +120,6 @@ document.addEventListener('DOMContentLoaded', () => {
           el.style.animation = '';
         });
       }
-
-      // Re-trigger success animations
-      if (index === 3) {
-        const successEls = stages[3].querySelectorAll('.process-success, .process-success-circle, .process-success-tick, .process-success-text');
-        successEls.forEach(el => {
-          el.style.animation = 'none';
-          el.offsetHeight;
-          el.style.animation = '';
-        });
-      }
     }
 
     // Start with upload
@@ -140,9 +128,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function nextStage() {
       current = (current + 1) % TOTAL_STAGES;
       showStage(current);
-      // Success stage is shorter
-      const delay = current === 3 ? SUCCESS_DURATION : STAGE_DURATION;
-      processTimer = setTimeout(nextStage, delay);
+      processTimer = setTimeout(nextStage, STAGE_DURATION);
     }
 
     processTimer = setTimeout(nextStage, STAGE_DURATION);
