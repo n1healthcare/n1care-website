@@ -63,6 +63,20 @@
       flex-shrink: 0;
     }
 
+    .header-right {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 4px;
+      flex-shrink: 0;
+    }
+
+    .report-date {
+      font-size: 0.85rem;
+      color: #64748b;
+      margin: 0;
+    }
+
     .patient-id {
       font-size: 1.87rem;
       font-weight: 700;
@@ -1367,9 +1381,11 @@
         <div class="header-top">
           <div class="header-left">
             <h1 class="report-title">Health Data Analysis</h1>
-            <p class="report-subtitle">Generated February 14, 2026</p>
           </div>
-          <img src="data:image/png;base64,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" alt="Company Logo" class="header-logo">
+          <div class="header-right">
+            <img src="/images/n1-logo.png" alt="n1.care logo" class="header-logo">
+            <p class="report-date">Report Date: February 14, 2026</p>
+          </div>
         </div>
 
         <!-- Patient Info -->
