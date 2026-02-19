@@ -3,9 +3,6 @@
    Integrated Biosciences-inspired design system
    ============================================ */
 
-/* --- Google Fonts --- */
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap');
-
 /* --- Design Tokens --- */
 :root {
   --bg:        #f7f7f5;
@@ -1928,28 +1925,21 @@ section {
 
 /* --- Image Band with overlay text --- */
 .image-band--overlay {
-  position: relative;
+  background: linear-gradient(135deg, #1a1a2e 0%, #4a2c6e 30%, #6b3fa0 60%, #3d2066 100%);
   padding: 0;
 }
 
-.image-band--overlay img {
-  width: 100%;
-  height: clamp(300px, 30vw, 500px);
-  object-fit: cover;
-  display: block;
-}
-
 .image-band--overlay .image-band-overlay {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(to right, rgba(34, 47, 48, 0.7) 0%, rgba(34, 47, 48, 0.1) 100%);
   display: flex;
   align-items: center;
+  justify-content: center;
+  min-height: clamp(300px, 30vw, 500px);
 }
 
 .image-band--overlay .image-band-text {
   padding: 0 clamp(2rem, 1rem + 4vw, 6rem);
   max-width: 550px;
+  text-align: center;
 }
 
 .image-band--overlay .image-band-text h3 {

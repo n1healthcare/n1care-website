@@ -1,36 +1,41 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Reports & Data — n1.care</title>
-  <meta name="description" content="AI-powered health reports and four structured data categories — explore how N1 turns medical records into clinical intelligence.">
-  <link rel="icon" type="image/png" href="images/favicon.png">
-  <meta property="og:title" content="Reports & Data — n1.care">
-  <meta property="og:description" content="AI-powered health reports and structured data categories for clinical intelligence.">
-  <meta property="og:type" content="website">
-  <meta property="og:site_name" content="n1.care">
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-
-  <!-- Nav -->
-  <nav class="nav nav-transparent">
-    <div class="container nav-inner">
-      <a href="index.html" class="nav-logo"><img src="images/n1-logo.png" alt="n1.care"></a>
-      <div class="nav-links">
-        <a href="index.html">Home</a>
-        <a href="how-it-works.html">How It Works</a>
-        <a href="health-report.html">Reports</a>
-        <a href="pricing.html">Pricing</a>
-        <a href="about.html">About</a>
-        <a href="https://app.n1.care" class="btn btn-primary">Get Started</a>
-      </div>
-      <button class="nav-toggle" aria-label="Toggle menu">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-  </nav>
+---
+layout: base.njk
+title: "Reports & Data — n1.care"
+description: "AI-powered health reports and four structured data categories — explore how n1.care turns medical records into clinical intelligence."
+ogTitle: "Reports & Data — n1.care"
+ogDescription: "AI-powered health reports and structured data categories for clinical intelligence."
+canonical: "https://n1.care/health-report"
+permalink: "/health-report/index.html"
+headExtra: |
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MedicalWebPage",
+    "name": "AI-Powered Health Reports & Structured Data",
+    "description": "AI-powered health reports and four structured data categories — biomarkers, diagnoses, procedures, and genetics — built for licensed healthcare professionals.",
+    "url": "https://n1.care/health-report",
+    "medicalAudience": {
+      "@type": "MedicalAudience",
+      "audienceType": "Clinician"
+    },
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "n1.care",
+      "url": "https://n1.care"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://n1.care/" },
+      { "@type": "ListItem", "position": 2, "name": "Reports", "item": "https://n1.care/health-report" }
+    ]
+  }
+  </script>
+---
 
   <!-- Page Header -->
   <section class="subpage-header subpage-header--reports">
@@ -39,7 +44,7 @@
     <div class="container">
       <span class="section-label reveal">Reports & Data</span>
       <h1 class="reveal">AI-powered reports.<br>Four data categories.</h1>
-      <p class="reveal">N1 extracts structured clinical data from uploaded medical records and generates AI-powered reports — each designed for a different clinical need.</p>
+      <p class="reveal">n1.care extracts structured clinical data from uploaded medical records and generates AI-powered reports — each designed for a different clinical need.</p>
     </div>
   </section>
 
@@ -49,7 +54,7 @@
       <div class="section-header reveal">
         <span class="section-label">How it works</span>
         <h2>From records to report in minutes.</h2>
-        <p class="text-lg">N1 turns unstructured medical documents into structured clinical intelligence — then generates AI-powered reports tailored to each patient.</p>
+        <p class="text-lg">n1.care turns unstructured medical documents into structured clinical intelligence — then generates AI-powered reports tailored to each patient.</p>
       </div>
 
       <div class="report-flow reveal-stagger">
@@ -86,7 +91,7 @@
       <div class="section-header reveal">
         <span class="section-label">Report capabilities</span>
         <h2>Choose the lens that fits.</h2>
-        <p class="text-lg">Every patient is different. Every clinical question deserves a tailored approach. N1 adapts to match your needs.</p>
+        <p class="text-lg">Every patient is different. Every clinical question deserves a tailored approach. n1.care adapts to match your needs.</p>
       </div>
 
       <div class="chapter-section chapter-section--with-example reveal">
@@ -96,7 +101,7 @@
           <p>Comprehensive AI-powered health analysis with detailed clinical insights and evidence-based recommendations.</p>
 
           <!-- Inline report example -->
-          <a href="examples/precision-clinical-health-analysis.html" target="_blank" class="snapshot-inline">
+          <a href="/examples/precision-clinical-health-analysis.html" target="_blank" class="snapshot-inline">
             <div class="snapshot-card">
               <div class="snapshot-chrome">
                 <span class="snapshot-dot" style="background:#ff5f57;"></span>
@@ -157,7 +162,7 @@
           <p>Visual and narrative representation of health data trends with interactive charts and analytics.</p>
 
           <!-- Inline report example -->
-          <a href="examples/longitudinal-biomarker-profile.html" target="_blank" class="snapshot-inline">
+          <a href="/examples/longitudinal-biomarker-profile.html" target="_blank" class="snapshot-inline">
             <div class="snapshot-card">
               <div class="snapshot-chrome">
                 <span class="snapshot-dot" style="background:#ff5f57;"></span>
@@ -246,7 +251,7 @@
           <p>Multi-agent AI analysis providing diverse clinical perspectives on your health data.</p>
 
           <!-- Inline PDF report example -->
-          <a href="examples/advanced-multi-perspective-review.pdf" target="_blank" class="snapshot-inline">
+          <a href="/examples/advanced-multi-perspective-review.pdf" target="_blank" class="snapshot-inline">
             <div class="snapshot-pdf">
               <div class="snapshot-pdf-stack">
                 <!-- Background pages for depth -->
@@ -285,42 +290,3 @@
       <a href="https://app.n1.care" class="btn btn-primary">Get started</a>
     </div>
   </section>
-
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-inner">
-        <div class="footer-brand">
-          <div class="nav-logo"><img src="images/n1-logo.png" alt="n1.care"></div>
-          <p>AI-powered clinical health intelligence — turning medical records into actionable insights for clinicians and their patients.</p>
-        </div>
-        <div class="footer-links">
-          <div class="footer-col">
-            <h4>Product</h4>
-            <a href="how-it-works.html">How It Works</a>
-            <a href="health-report.html">Reports</a>
-            <a href="pricing.html">Pricing</a>
-            <a href="https://app.n1.care">Get Started</a>
-          </div>
-          <div class="footer-col">
-            <h4>Company</h4>
-            <a href="about.html">About</a>
-            <a href="contact.html">Contact</a>
-            <a href="faq.html">FAQ</a>
-          </div>
-          <div class="footer-col">
-            <h4>Legal</h4>
-            <a href="privacy.html">Privacy Policy</a>
-            <a href="terms.html">Terms of Service</a>
-          </div>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        &copy; 2026 n1.care. All rights reserved.
-      </div>
-    </div>
-  </footer>
-
-  <script src="main.js"></script>
-</body>
-</html>

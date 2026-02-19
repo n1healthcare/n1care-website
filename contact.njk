@@ -1,36 +1,37 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Get Started — n1.care</title>
-  <meta name="description" content="Get started with n1.care's AI-powered clinical health intelligence platform. Contact us to learn more.">
-  <link rel="icon" type="image/png" href="images/favicon.png">
-  <meta property="og:title" content="Get Started — n1.care">
-  <meta property="og:description" content="Contact n1.care to learn about our AI-powered clinical intelligence platform.">
-  <meta property="og:type" content="website">
-  <meta property="og:site_name" content="n1.care">
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-
-  <!-- Nav -->
-  <nav class="nav nav-transparent">
-    <div class="container nav-inner">
-      <a href="index.html" class="nav-logo"><img src="images/n1-logo.png" alt="n1.care"></a>
-      <div class="nav-links">
-        <a href="index.html">Home</a>
-        <a href="how-it-works.html">How It Works</a>
-        <a href="health-report.html">Reports</a>
-        <a href="pricing.html">Pricing</a>
-        <a href="about.html">About</a>
-        <a href="https://app.n1.care" class="btn btn-primary">Get Started</a>
-      </div>
-      <button class="nav-toggle" aria-label="Toggle menu">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-  </nav>
+---
+layout: base.njk
+title: "Get Started — n1.care"
+description: "Get started with n1.care's AI-powered clinical health intelligence platform. Contact us to learn more."
+ogTitle: "Get Started — n1.care"
+ogDescription: "Contact n1.care to learn about our AI-powered clinical intelligence platform."
+canonical: "https://n1.care/contact"
+permalink: "/contact/index.html"
+headExtra: |
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    "name": "Get Started with n1.care",
+    "description": "Contact n1.care to learn about our AI-powered clinical health intelligence platform.",
+    "url": "https://n1.care/contact",
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "n1.care",
+      "url": "https://n1.care"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://n1.care/" },
+      { "@type": "ListItem", "position": 2, "name": "Contact", "item": "https://n1.care/contact" }
+    ]
+  }
+  </script>
+---
 
   <!-- Page Header + Contact Form -->
   <section class="subpage-header subpage-header--contact">
@@ -39,7 +40,7 @@
     <div class="container">
       <span class="section-label reveal">Get Started</span>
       <h1 class="reveal">Let's get started.</h1>
-      <p class="reveal">Tell us about your practice and we'll be in touch to discuss how N1 can help you and your patients.</p>
+      <p class="reveal">Tell us about your practice and we'll be in touch to discuss how n1.care can help you and your patients.</p>
 
       <div class="contact-grid reveal">
 
@@ -111,42 +112,3 @@
       </div>
     </div>
   </section>
-
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-inner">
-        <div class="footer-brand">
-          <div class="nav-logo"><img src="images/n1-logo.png" alt="n1.care"></div>
-          <p>AI-powered clinical health intelligence — turning medical records into actionable insights for clinicians and their patients.</p>
-        </div>
-        <div class="footer-links">
-          <div class="footer-col">
-            <h4>Product</h4>
-            <a href="how-it-works.html">How It Works</a>
-            <a href="health-report.html">Reports</a>
-            <a href="pricing.html">Pricing</a>
-            <a href="https://app.n1.care">Get Started</a>
-          </div>
-          <div class="footer-col">
-            <h4>Company</h4>
-            <a href="about.html">About</a>
-            <a href="contact.html">Contact</a>
-            <a href="faq.html">FAQ</a>
-          </div>
-          <div class="footer-col">
-            <h4>Legal</h4>
-            <a href="privacy.html">Privacy Policy</a>
-            <a href="terms.html">Terms of Service</a>
-          </div>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        &copy; 2026 n1.care. All rights reserved.
-      </div>
-    </div>
-  </footer>
-
-  <script src="main.js"></script>
-</body>
-</html>

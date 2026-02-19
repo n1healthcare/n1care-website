@@ -1,36 +1,63 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>n1.care — Smarter Insights, Stronger Outcomes</title>
-  <meta name="description" content="n1.care helps clinicians upload medical records, extract structured data, and generate AI-powered health reports for their patients.">
-  <link rel="icon" type="image/png" href="images/favicon.png">
-  <meta property="og:title" content="n1.care — AI-Powered Clinical Health Intelligence">
-  <meta property="og:description" content="Turn medical records into structured, actionable health intelligence with AI-powered reports built for clinicians.">
-  <meta property="og:type" content="website">
-  <meta property="og:site_name" content="n1.care">
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-
-  <!-- Nav (transparent over hero) -->
-  <nav class="nav nav-transparent">
-    <div class="container nav-inner">
-      <a href="index.html" class="nav-logo"><img src="images/n1-logo.png" alt="n1.care"></a>
-      <div class="nav-links">
-        <a href="index.html">Home</a>
-        <a href="how-it-works.html">How It Works</a>
-        <a href="health-report.html">Reports</a>
-        <a href="pricing.html">Pricing</a>
-        <a href="about.html">About</a>
-        <a href="https://app.n1.care" class="btn btn-primary">Get Started</a>
-      </div>
-      <button class="nav-toggle" aria-label="Toggle menu">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-  </nav>
+---
+layout: base.njk
+title: "n1.care — Smarter Insights, Stronger Outcomes"
+description: "n1.care helps clinicians upload medical records, extract structured data, and generate AI-powered health reports for their patients."
+ogTitle: "n1.care — AI-Powered Clinical Health Intelligence"
+ogDescription: "Turn medical records into structured, actionable health intelligence with AI-powered reports built for clinicians."
+canonical: "https://n1.care/"
+permalink: "/index.html"
+headExtra: |
+  <script type="application/ld+json">
+  [{
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "n1.care",
+    "legalName": "N1 Research, LLC",
+    "url": "https://n1.care",
+    "logo": "https://n1.care/images/n1-light-green.png",
+    "description": "AI-powered clinical health intelligence platform for licensed healthcare professionals.",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+1-302-202-0303",
+      "email": "longevity@n1.care",
+      "contactType": "sales"
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "1111B S Governors Ave STE 39520",
+      "addressLocality": "Dover",
+      "addressRegion": "DE",
+      "postalCode": "19904",
+      "addressCountry": "US"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "n1.care",
+    "url": "https://n1.care"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "n1.care",
+    "applicationCategory": "HealthApplication",
+    "operatingSystem": "Web",
+    "description": "AI-powered platform that transforms medical records into structured clinical intelligence with biomarker tracking, diagnosis management, and AI-generated health reports.",
+    "url": "https://app.n1.care",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD",
+      "description": "Usage-based pricing. Core platform features are free. Pay only for record processing, AI summaries, and report generation."
+    },
+    "provider": {
+      "@type": "Organization",
+      "name": "N1 Research, LLC"
+    }
+  }]
+  </script>
+---
 
   <!-- Hero -->
   <section class="hero">
@@ -49,7 +76,7 @@
         <p class="reveal">n1.care turns medical records into structured, actionable health intelligence — AI-powered reports built for clinicians and their patients.</p>
         <div class="hero-actions reveal">
           <a href="https://app.n1.care" class="btn btn-primary">Get started</a>
-          <a href="how-it-works.html" class="btn btn-ghost">See how it works</a>
+          <a href="/how-it-works" class="btn btn-ghost">See how it works</a>
         </div>
       </div>
 
@@ -60,7 +87,7 @@
         <div class="hero-vis hero-vis--app-preview">
           <div class="app-preview-card">
             <div class="app-preview-header">
-              <span class="app-preview-logo">N1</span>
+              <span class="app-preview-logo">n1.care</span>
               <span class="app-preview-title">Patient Dashboard</span>
             </div>
             <div class="app-preview-row"><span class="app-preview-label">HbA1c</span><span class="app-preview-val snapshot-green">5.4%</span><span class="app-preview-range">4.0 – 5.6</span></div>
@@ -395,7 +422,7 @@
             <div class="platform-app">
               <!-- Sidebar -->
               <div class="platform-sidebar">
-                <div class="platform-sidebar-logo"><img src="images/n1-logo.png" alt="N1" style="height: 20px; width: auto;"></div>
+                <div class="platform-sidebar-logo"><img src="/images/n1-logo.png" alt="n1.care" style="height: 20px; width: auto;"></div>
                 <div class="platform-sidebar-section">Overview</div>
                 <div class="platform-sidebar-item active">
                   <svg viewBox="0 0 16 16" fill="none"><rect x="1" y="1" width="6" height="6" rx="1" stroke="currentColor" stroke-width="1.2"/><rect x="9" y="1" width="6" height="6" rx="1" stroke="currentColor" stroke-width="1.2"/><rect x="1" y="9" width="6" height="6" rx="1" stroke="currentColor" stroke-width="1.2"/><rect x="9" y="9" width="6" height="6" rx="1" stroke="currentColor" stroke-width="1.2"/></svg>
@@ -497,7 +524,7 @@
             </div>
             <div class="platform-app">
               <div class="platform-sidebar platform-sidebar--collapsed">
-                <div class="platform-sidebar-logo"><img src="images/n1-logo.png" alt="N1" style="height: 20px; width: auto; object-fit: cover; object-position: left; max-width: 24px;"></div>
+                <div class="platform-sidebar-logo"><img src="/images/n1-logo.png" alt="n1.care" style="height: 20px; width: auto; object-fit: cover; object-position: left; max-width: 24px;"></div>
                 <div class="platform-sidebar-item"><svg viewBox="0 0 16 16" fill="none"><rect x="1" y="1" width="6" height="6" rx="1" stroke="currentColor" stroke-width="1.2"/><rect x="9" y="1" width="6" height="6" rx="1" stroke="currentColor" stroke-width="1.2"/><rect x="1" y="9" width="6" height="6" rx="1" stroke="currentColor" stroke-width="1.2"/><rect x="9" y="9" width="6" height="6" rx="1" stroke="currentColor" stroke-width="1.2"/></svg></div>
                 <div class="platform-sidebar-item active"><svg viewBox="0 0 16 16" fill="none"><path d="M2 3h12M2 8h12M2 13h8" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg></div>
                 <div class="platform-sidebar-item"><svg viewBox="0 0 16 16" fill="none"><rect x="2" y="1" width="12" height="14" rx="1.5" stroke="currentColor" stroke-width="1.2"/><path d="M5 5h6M5 8h4M5 11h5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg></div>
@@ -572,7 +599,7 @@
             </div>
             <div class="platform-app">
               <div class="platform-sidebar platform-sidebar--collapsed">
-                <div class="platform-sidebar-logo"><img src="images/n1-logo.png" alt="N1" style="height: 20px; width: auto; object-fit: cover; object-position: left; max-width: 24px;"></div>
+                <div class="platform-sidebar-logo"><img src="/images/n1-logo.png" alt="n1.care" style="height: 20px; width: auto; object-fit: cover; object-position: left; max-width: 24px;"></div>
                 <div class="platform-sidebar-item"><svg viewBox="0 0 16 16" fill="none"><rect x="1" y="1" width="6" height="6" rx="1" stroke="currentColor" stroke-width="1.2"/><rect x="9" y="1" width="6" height="6" rx="1" stroke="currentColor" stroke-width="1.2"/><rect x="1" y="9" width="6" height="6" rx="1" stroke="currentColor" stroke-width="1.2"/><rect x="9" y="9" width="6" height="6" rx="1" stroke="currentColor" stroke-width="1.2"/></svg></div>
                 <div class="platform-sidebar-item"><svg viewBox="0 0 16 16" fill="none"><path d="M2 3h12M2 8h12M2 13h8" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg></div>
                 <div class="platform-sidebar-item"><svg viewBox="0 0 16 16" fill="none"><rect x="2" y="1" width="12" height="14" rx="1.5" stroke="currentColor" stroke-width="1.2"/><path d="M5 5h6M5 8h4M5 11h5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg></div>
@@ -661,7 +688,7 @@
             </div>
             <div class="platform-app">
               <div class="platform-sidebar platform-sidebar--collapsed">
-                <div class="platform-sidebar-logo"><img src="images/n1-logo.png" alt="N1" style="height: 20px; width: auto; object-fit: cover; object-position: left; max-width: 24px;"></div>
+                <div class="platform-sidebar-logo"><img src="/images/n1-logo.png" alt="n1.care" style="height: 20px; width: auto; object-fit: cover; object-position: left; max-width: 24px;"></div>
                 <div class="platform-sidebar-item"><svg viewBox="0 0 16 16" fill="none"><rect x="1" y="1" width="6" height="6" rx="1" stroke="currentColor" stroke-width="1.2"/><rect x="9" y="1" width="6" height="6" rx="1" stroke="currentColor" stroke-width="1.2"/><rect x="1" y="9" width="6" height="6" rx="1" stroke="currentColor" stroke-width="1.2"/><rect x="9" y="9" width="6" height="6" rx="1" stroke="currentColor" stroke-width="1.2"/></svg></div>
                 <div class="platform-sidebar-item"><svg viewBox="0 0 16 16" fill="none"><path d="M2 3h12M2 8h12M2 13h8" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg></div>
                 <div class="platform-sidebar-item active"><svg viewBox="0 0 16 16" fill="none"><rect x="2" y="1" width="12" height="14" rx="1.5" stroke="currentColor" stroke-width="1.2"/><path d="M5 5h6M5 8h4M5 11h5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg></div>
@@ -745,7 +772,7 @@
       <div class="section-header reveal">
         <span class="section-label">Reports</span>
         <h2>Multiple report types.<br>One platform.</h2>
-        <p class="text-lg">Every patient is different. N1 offers a range of AI-powered report types — each with a distinct clinical lens — so you can choose the insight that fits.</p>
+        <p class="text-lg">Every patient is different. n1.care offers a range of AI-powered report types — each with a distinct clinical lens — so you can choose the insight that fits.</p>
       </div>
       <div class="chapters-grid reveal-stagger">
         <div class="chapter-card">
@@ -767,7 +794,7 @@
           </div>
           <h4>Precision Clinical Health Analysis</h4>
           <p>Comprehensive AI-powered health analysis with detailed clinical insights and evidence-based recommendations.</p>
-          <a href="health-report.html" class="btn btn-ghost" style="margin-top: 0.5rem;">See full report</a>
+          <a href="/health-report" class="btn btn-ghost" style="margin-top: 0.5rem;">See full report</a>
         </div>
         <div class="chapter-card">
           <!-- Mini snapshot: sparkline charts -->
@@ -793,7 +820,7 @@
           </div>
           <h4>Longitudinal Biomarker Profile</h4>
           <p>Visual and narrative representation of health data trends with interactive charts and analytics.</p>
-          <a href="health-report.html" class="btn btn-ghost" style="margin-top: 0.5rem;">See full report</a>
+          <a href="/health-report" class="btn btn-ghost" style="margin-top: 0.5rem;">See full report</a>
         </div>
         <div class="chapter-card">
           <!-- Mini snapshot: PDF multi-perspective -->
@@ -810,22 +837,21 @@
           </div>
           <h4>Advanced Multi-Perspective Review</h4>
           <p>Multi-agent AI analysis providing diverse clinical perspectives on your health data.</p>
-          <a href="health-report.html" class="btn btn-ghost" style="margin-top: 0.5rem;">See full report</a>
+          <a href="/health-report" class="btn btn-ghost" style="margin-top: 0.5rem;">See full report</a>
         </div>
       </div>
       <div style="margin-top: 3rem;" class="reveal">
-        <a href="health-report.html" class="btn btn-ghost">Learn more about reports</a>
+        <a href="/health-report" class="btn btn-ghost">Learn more about reports</a>
       </div>
     </div>
   </section>
 
   <!-- Image Band with Overlay -->
   <section class="image-band--overlay reveal">
-    <img src="https://images.unsplash.com/photo-1557682250-33bd709cbe85?w=1600&h=500&fit=crop&crop=center&q=80" alt="Abstract gradient with smooth teal and blue tones" loading="lazy">
     <div class="image-band-overlay">
       <div class="image-band-text">
         <h3>Trusted by clinicians who want clarity.</h3>
-        <p>From independent practitioners to health organisations — N1 turns complexity into confidence.</p>
+        <p>From independent practitioners to health organisations — n1.care turns complexity into confidence.</p>
       </div>
     </div>
   </section>
@@ -835,13 +861,12 @@
     <div class="container">
       <div class="teaser-inner reveal">
         <div>
-          <span class="section-label">About N1</span>
+          <span class="section-label">About n1.care</span>
           <h2>Cross-disciplinary.<br>Science-driven.</h2>
           <p class="text-muted" style="margin-top: 1rem;">We are a cross-disciplinary team of clinicians, data scientists, AI engineers, and health optimisation experts. We are passionate about precision health, and we believe the best medicine is proactive, not reactive.</p>
           <p class="text-muted" style="margin-top: 1rem;">Our team has trained at leading institutions, worked across multiple domains of longevity, diagnostics, clinical decision-making, and AI development. Everything we build is grounded in rigorous science and tested logic.</p>
-          <a href="about.html" class="btn btn-ghost" style="margin-top: 1.5rem;">Learn about us</a>
+          <a href="/about" class="btn btn-ghost" style="margin-top: 1.5rem;">Learn about us</a>
         </div>
-        <!-- TODO: teaser visual — revisit design -->
 
       </div>
     </div>
@@ -965,7 +990,7 @@
 
       </div>
       <div style="text-align: center;" class="reveal">
-        <a href="faq.html" class="btn btn-ghost">View all FAQ</a>
+        <a href="/faq" class="btn btn-ghost">View all FAQ</a>
       </div>
     </div>
   </section>
@@ -978,42 +1003,3 @@
       <a href="https://app.n1.care" class="btn btn-primary">Get started</a>
     </div>
   </section>
-
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-inner">
-        <div class="footer-brand">
-          <div class="nav-logo"><img src="images/n1-logo.png" alt="n1.care"></div>
-          <p>AI-powered clinical health intelligence — turning medical records into actionable insights for clinicians and their patients.</p>
-        </div>
-        <div class="footer-links">
-          <div class="footer-col">
-            <h4>Product</h4>
-            <a href="how-it-works.html">How It Works</a>
-            <a href="health-report.html">Reports</a>
-            <a href="pricing.html">Pricing</a>
-            <a href="https://app.n1.care">Get Started</a>
-          </div>
-          <div class="footer-col">
-            <h4>Company</h4>
-            <a href="about.html">About</a>
-            <a href="contact.html">Contact</a>
-            <a href="faq.html">FAQ</a>
-          </div>
-          <div class="footer-col">
-            <h4>Legal</h4>
-            <a href="privacy.html">Privacy Policy</a>
-            <a href="terms.html">Terms of Service</a>
-          </div>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        &copy; 2026 n1.care. All rights reserved.
-      </div>
-    </div>
-  </footer>
-
-  <script src="main.js"></script>
-</body>
-</html>

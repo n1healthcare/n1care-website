@@ -1,36 +1,111 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>FAQ — n1.care</title>
-  <meta name="description" content="Frequently asked questions about n1.care's AI-powered clinical health intelligence platform for healthcare professionals.">
-  <link rel="icon" type="image/png" href="images/favicon.png">
-  <meta property="og:title" content="FAQ — n1.care">
-  <meta property="og:description" content="Frequently asked questions about n1.care's clinical health intelligence platform.">
-  <meta property="og:type" content="website">
-  <meta property="og:site_name" content="n1.care">
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-
-  <!-- Nav -->
-  <nav class="nav nav-transparent">
-    <div class="container nav-inner">
-      <a href="index.html" class="nav-logo"><img src="images/n1-logo.png" alt="n1.care"></a>
-      <div class="nav-links">
-        <a href="index.html">Home</a>
-        <a href="how-it-works.html">How It Works</a>
-        <a href="health-report.html">Reports</a>
-        <a href="pricing.html">Pricing</a>
-        <a href="about.html">About</a>
-        <a href="https://app.n1.care" class="btn btn-primary">Get Started</a>
-      </div>
-      <button class="nav-toggle" aria-label="Toggle menu">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-  </nav>
+---
+layout: base.njk
+title: "FAQ — n1.care"
+description: "Frequently asked questions about n1.care's AI-powered clinical health intelligence platform for healthcare professionals."
+ogTitle: "FAQ — n1.care"
+ogDescription: "Frequently asked questions about n1.care's clinical health intelligence platform."
+canonical: "https://n1.care/faq"
+permalink: "/faq/index.html"
+headExtra: |
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Who is n1.care for?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "n1.care is designed for licensed healthcare professionals who want to streamline the process of interpreting complex patient data and delivering personalised care. The platform is built exclusively for clinicians — not for direct patient use."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can patients use the platform directly?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. The platform is intended for clinician use only. Patients receive insights and reports only after a licensed professional has reviewed, edited, and approved them."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What types of data can I upload?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "You can upload lab results, imaging reports, medical records, genetics reports, and clinical notes. Files can be in PDF, image, or text format. Our parser automatically extracts structured data from any medical document."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How does the AI work?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Our system analyses uploaded documents to extract relevant biomarkers, diagnoses, procedures, and other clinical indicators. These are presented as editable drafts for clinician review and customisation. The AI uses specialised models trained for medical data extraction and report generation."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is the AI making clinical decisions?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. The AI provides draft summaries, reports, and interpretations, but only the licensed clinician determines what is included in the final report or diagnosis list. Every output is fully editable and requires clinician sign-off before sharing."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is a CHR (Comprehensive Health Report)?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A Comprehensive Health Report (CHR) is a customisable, structured summary that combines biomarker trends, clinical history, and recommendations — all curated and approved by the clinician. Multiple report types are available, each with a different clinical lens."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I edit AI-generated content?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Every aspect of the output — biomarkers, diagnoses, genetic notes, recommendations, and reports — is fully editable by the physician before being finalised. You have complete control over what appears in the final report."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do I need to sign off before sharing with patients?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Reports and clinical summaries are not shared with patients unless explicitly reviewed and signed off by the responsible doctor. This ensures clinical accuracy and professional accountability."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is my data secure?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Absolutely. All data is encrypted at rest (XChaCha20-Poly1305) and in transit (TLS). We support multi-factor authentication, enforce rate limiting on all endpoints, and maintain comprehensive audit logs of every authentication event and data access. We are HIPAA compliant."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I get started?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Simply sign up at app.n1.care with your medical credentials. Once verified, you can start uploading records, generating reports, and managing patient profiles immediately."
+        }
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://n1.care/" },
+      { "@type": "ListItem", "position": 2, "name": "FAQ", "item": "https://n1.care/faq" }
+    ]
+  }
+  </script>
+---
 
   <!-- Page Header -->
   <section class="subpage-header subpage-header--faq">
@@ -157,45 +232,6 @@
     <div class="container reveal">
       <h2>Still have questions?</h2>
       <p>Get in touch with our team — we're happy to walk you through the platform.</p>
-      <a href="contact.html" class="btn btn-primary">Contact us</a>
+      <a href="/contact" class="btn btn-primary">Contact us</a>
     </div>
   </section>
-
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-inner">
-        <div class="footer-brand">
-          <div class="nav-logo"><img src="images/n1-logo.png" alt="n1.care"></div>
-          <p>AI-powered clinical health intelligence — turning medical records into actionable insights for clinicians and their patients.</p>
-        </div>
-        <div class="footer-links">
-          <div class="footer-col">
-            <h4>Product</h4>
-            <a href="how-it-works.html">How It Works</a>
-            <a href="health-report.html">Reports</a>
-            <a href="pricing.html">Pricing</a>
-            <a href="https://app.n1.care">Get Started</a>
-          </div>
-          <div class="footer-col">
-            <h4>Company</h4>
-            <a href="about.html">About</a>
-            <a href="contact.html">Contact</a>
-            <a href="faq.html">FAQ</a>
-          </div>
-          <div class="footer-col">
-            <h4>Legal</h4>
-            <a href="privacy.html">Privacy Policy</a>
-            <a href="terms.html">Terms of Service</a>
-          </div>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        &copy; 2026 n1.care. All rights reserved.
-      </div>
-    </div>
-  </footer>
-
-  <script src="main.js"></script>
-</body>
-</html>

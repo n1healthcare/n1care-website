@@ -1,0 +1,16 @@
+name = "n1-care-website"
+compatibility_date = "2026-02-19"
+
+[assets]
+directory = "./_site"
+
+# Production environment (main branch) -> n1.care
+[env.production]
+name = "n1-care-website-production"
+routes = [
+  { pattern = "n1.care", custom_domain = true }
+]
+
+# Staging environment (develop branch) -> workers.dev preview
+[env.staging]
+name = "n1-care-website"
