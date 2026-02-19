@@ -1,0 +1,28 @@
+{
+  "name": "n1healthcare-website",
+  "version": "1.0.0",
+  "description": "n1.care marketing website",
+  "main": "main.js",
+  "directories": {
+    "example": "examples"
+  },
+  "scripts": {
+    "build": "npx @11ty/eleventy",
+    "serve": "npx @11ty/eleventy --serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/n1healthcare/n1healthcare-website.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/n1healthcare/n1healthcare-website/issues"
+  },
+  "homepage": "https://github.com/n1healthcare/n1healthcare-website#readme",
+  "dependencies": {
+    "@11ty/eleventy": "3.1.2"
+  }
+}

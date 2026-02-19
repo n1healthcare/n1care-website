@@ -1,43 +1,44 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About — n1.care</title>
-  <meta name="description" content="n1.care is a cross-disciplinary team of clinicians, data scientists, AI engineers, and health optimisation experts building AI-powered clinical intelligence.">
-  <link rel="icon" type="image/png" href="images/favicon.png">
-  <meta property="og:title" content="About — n1.care">
-  <meta property="og:description" content="A cross-disciplinary team building AI-powered clinical health intelligence.">
-  <meta property="og:type" content="website">
-  <meta property="og:site_name" content="n1.care">
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-
-  <!-- Nav -->
-  <nav class="nav nav-transparent">
-    <div class="container nav-inner">
-      <a href="index.html" class="nav-logo"><img src="images/n1-logo.png" alt="n1.care"></a>
-      <div class="nav-links">
-        <a href="index.html">Home</a>
-        <a href="how-it-works.html">How It Works</a>
-        <a href="health-report.html">Reports</a>
-        <a href="pricing.html">Pricing</a>
-        <a href="about.html">About</a>
-        <a href="https://app.n1.care" class="btn btn-primary">Get Started</a>
-      </div>
-      <button class="nav-toggle" aria-label="Toggle menu">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-  </nav>
+---
+layout: base.njk
+title: "About — n1.care"
+description: "n1.care is a cross-disciplinary team of clinicians, data scientists, AI engineers, and health optimisation experts building AI-powered clinical intelligence."
+ogTitle: "About — n1.care"
+ogDescription: "A cross-disciplinary team building AI-powered clinical health intelligence."
+canonical: "https://n1.care/about"
+permalink: "/about/index.html"
+headExtra: |
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AboutPage",
+    "name": "About n1.care",
+    "description": "n1.care is a cross-disciplinary team of clinicians, data scientists, AI engineers, and health optimisation experts building AI-powered clinical intelligence.",
+    "url": "https://n1.care/about",
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "n1.care",
+      "url": "https://n1.care"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://n1.care/" },
+      { "@type": "ListItem", "position": 2, "name": "About", "item": "https://n1.care/about" }
+    ]
+  }
+  </script>
+---
 
   <!-- Page Header -->
   <section class="subpage-header subpage-header--about">
     <div class="subpage-wave subpage-wave--1"></div>
     <div class="subpage-wave subpage-wave--2"></div>
     <div class="container">
-      <span class="section-label reveal">About N1</span>
+      <span class="section-label reveal">About n1.care</span>
       <h1 class="reveal">Cross-disciplinary.<br>Science-driven.</h1>
       <p class="reveal">We are passionate about precision health, and we believe the best medicine is proactive, not reactive.</p>
     </div>
@@ -60,7 +61,7 @@
           </p>
         </div>
         <div class="mission-image reveal">
-          <img src="https://images.unsplash.com/photo-1666214280557-f1b5022eb634?w=800&h=1067&fit=crop&crop=center&q=80" alt="Clinician reviewing patient health data" loading="lazy">
+          <img src="/images/clinician-reviewing-data.jpg" alt="Clinician reviewing patient health data" fetchpriority="high">
         </div>
       </div>
     </div>
@@ -76,122 +77,117 @@
       </div>
       <div class="team-grid reveal-stagger">
         <div class="team-member">
-          <div class="team-member-photo"><img src="images/team/jean-yves-sireau.jpg" alt="Jean-Yves Sireau" loading="lazy"></div>
+          <div class="team-member-photo"><img src="/images/team/jean-yves-sireau.jpg" alt="Jean-Yves Sireau" loading="lazy"></div>
           <h4>Jean-Yves Sireau</h4>
           <p>Founder & CEO</p>
         </div>
         <div class="team-member">
-          <div class="team-member-photo"><img src="images/team/leah-elise.jpg" alt="Leah Elise" loading="lazy"></div>
+          <div class="team-member-photo"><img src="/images/team/leah-elise.jpg" alt="Leah Elise" loading="lazy"></div>
           <h4>Leah Elise</h4>
           <p>Director of Operations</p>
         </div>
         <div class="team-member">
-          <div class="team-member-photo"><img src="images/team/prasad-chalasani.jpg" alt="Prasad Chalasani" loading="lazy"></div>
+          <div class="team-member-photo"><img src="/images/team/prasad-chalasani.jpg" alt="Prasad Chalasani" loading="lazy"></div>
           <h4>Prasad Chalasani</h4>
           <p>Senior AI Engineer</p>
         </div>
         <div class="team-member">
-          <div class="team-member-photo"><img src="images/team/arun-venkataraman.jpg" alt="Arun Venkataraman" loading="lazy"></div>
+          <div class="team-member-photo"><img src="/images/team/arun-venkataraman.jpg" alt="Arun Venkataraman" loading="lazy"></div>
           <h4>Arun Venkataraman</h4>
           <p>Principal Engineer</p>
         </div>
         <div class="team-member">
-          <div class="team-member-photo"><img src="images/team/jasper-middendorp.jpg" alt="Jasper Middendorp" loading="lazy"></div>
+          <div class="team-member-photo"><img src="/images/team/jasper-middendorp.jpg" alt="Jasper Middendorp" loading="lazy"></div>
           <h4>Jasper Middendorp</h4>
           <p>Senior Engineer</p>
         </div>
         <div class="team-member">
-          <div class="team-member-photo"><img src="images/team/dannette-kallay.png" alt="Dr. Dannette Kallay" loading="lazy"></div>
+          <div class="team-member-photo"><img src="/images/team/dannette-kallay.png" alt="Dr. Dannette Kallay" loading="lazy"></div>
           <h4>Dr. Dannette Kallay</h4>
           <p>Integrative Physician</p>
         </div>
         <div class="team-member">
-          <div class="team-member-photo"><img src="images/team/aniruddha-deshpande.jpg" alt="Aniruddha Deshpande" loading="lazy"></div>
+          <div class="team-member-photo"><img src="/images/team/aniruddha-deshpande.jpg" alt="Aniruddha Deshpande" loading="lazy"></div>
           <h4>Aniruddha Deshpande</h4>
           <p>Senior AI Engineer</p>
         </div>
         <div class="team-member">
-          <div class="team-member-photo"><img src="images/team/darpan-bafana.png" alt="Darpan Bafana" loading="lazy"></div>
+          <div class="team-member-photo"><img src="/images/team/darpan-bafana.png" alt="Darpan Bafana" loading="lazy"></div>
           <h4>Darpan Bafana</h4>
           <p>DevOps Engineer</p>
         </div>
         <div class="team-member">
-          <div class="team-member-photo"><img src="images/team/nikhil-bery.jpg" alt="Nikhil Bery" loading="lazy"></div>
+          <div class="team-member-photo"><img src="/images/team/nikhil-bery.jpg" alt="Nikhil Bery" loading="lazy"></div>
           <h4>Nikhil Bery</h4>
           <p>Senior AI Engineer</p>
         </div>
         <div class="team-member">
-          <div class="team-member-photo"><img src="images/team/coen-elferink.png" alt="Coen Elferink" loading="lazy"></div>
+          <div class="team-member-photo"><img src="/images/team/coen-elferink.png" alt="Coen Elferink" loading="lazy"></div>
           <h4>Coen Elferink</h4>
           <p>Senior Frontend Developer</p>
         </div>
         <div class="team-member">
-          <div class="team-member-photo"><img src="images/team/umar-shah.jpg" alt="Umar Shah" loading="lazy"></div>
+          <div class="team-member-photo"><img src="/images/team/umar-shah.jpg" alt="Umar Shah" loading="lazy"></div>
           <h4>Umar Shah</h4>
           <p>Senior AI Engineer</p>
         </div>
         <div class="team-member">
-          <div class="team-member-photo"><img src="images/team/raj-kumar.png" alt="Raj Kumar" loading="lazy"></div>
+          <div class="team-member-photo"><img src="/images/team/raj-kumar.png" alt="Raj Kumar" loading="lazy"></div>
           <h4>Raj Kumar</h4>
           <p>Senior AI Engineer</p>
         </div>
         <div class="team-member">
-          <div class="team-member-photo"><img src="images/team/ashrith-jacob.jpg" alt="Ashrith Jacob" loading="lazy"></div>
+          <div class="team-member-photo"><img src="/images/team/ashrith-jacob.jpg" alt="Ashrith Jacob" loading="lazy"></div>
           <h4>Ashrith Jacob</h4>
           <p>Senior AI Engineer</p>
         </div>
         <div class="team-member">
-          <div class="team-member-photo"><img src="images/team/puneet-singhal.png" alt="Puneet Singhal" loading="lazy"></div>
+          <div class="team-member-photo"><img src="/images/team/puneet-singhal.png" alt="Puneet Singhal" loading="lazy"></div>
           <h4>Puneet Singhal</h4>
           <p>Senior AI Engineer</p>
         </div>
         <div class="team-member">
-          <div class="team-member-photo"><img src="images/team/yash-vibhandik.jpg" alt="Yash Vibhandik" loading="lazy"></div>
+          <div class="team-member-photo"><img src="/images/team/yash-vibhandik.jpg" alt="Yash Vibhandik" loading="lazy"></div>
           <h4>Yash Vibhandik</h4>
           <p>Senior AI Engineer</p>
         </div>
         <div class="team-member">
-          <div class="team-member-photo"><img src="images/team/timothy-tu.png" alt="Timothy Tu" loading="lazy"></div>
-          <h4>Timothy Tu</h4>
-          <p>Senior Frontend Developer</p>
-        </div>
-        <div class="team-member">
-          <div class="team-member-photo"><img src="images/team/dhrumil-kherde.png" alt="Dhrumil Kherde" loading="lazy"></div>
+          <div class="team-member-photo"><img src="/images/team/dhrumil-kherde.png" alt="Dhrumil Kherde" loading="lazy"></div>
           <h4>Dhrumil Kherde</h4>
           <p>Product Designer</p>
         </div>
         <div class="team-member">
-          <div class="team-member-photo"><img src="images/team/utkarsh-gupta.png" alt="Utkarsh Gupta" loading="lazy"></div>
+          <div class="team-member-photo"><img src="/images/team/utkarsh-gupta.png" alt="Utkarsh Gupta" loading="lazy"></div>
           <h4>Utkarsh Gupta</h4>
           <p>AI Engineer</p>
         </div>
         <div class="team-member">
-          <div class="team-member-photo"><img src="images/team/vishean-veloo.jpg" alt="Vishean Veloo" loading="lazy"></div>
+          <div class="team-member-photo"><img src="/images/team/vishean-veloo.jpg" alt="Vishean Veloo" loading="lazy"></div>
           <h4>Vishean Veloo</h4>
           <p>AI Engineer</p>
         </div>
         <div class="team-member">
-          <div class="team-member-photo"><img src="images/team/yousuf-sarfraz.png" alt="Yousuf Sarfraz" loading="lazy"></div>
+          <div class="team-member-photo"><img src="/images/team/yousuf-sarfraz.png" alt="Yousuf Sarfraz" loading="lazy"></div>
           <h4>Yousuf Sarfraz</h4>
           <p>AI Engineer</p>
         </div>
         <div class="team-member">
-          <div class="team-member-photo"><img src="images/team/jun-an-tan.png" alt="Jun An Tan" loading="lazy"></div>
+          <div class="team-member-photo"><img src="/images/team/jun-an-tan.png" alt="Jun An Tan" loading="lazy"></div>
           <h4>Jun An Tan</h4>
           <p>AI Engineer</p>
         </div>
         <div class="team-member">
-          <div class="team-member-photo"><img src="images/team/paawan-purdhani.png" alt="Paawan Purdhani" loading="lazy"></div>
+          <div class="team-member-photo"><img src="/images/team/paawan-purdhani.png" alt="Paawan Purdhani" loading="lazy"></div>
           <h4>Paawan Purdhani</h4>
           <p>AI Engineer</p>
         </div>
         <div class="team-member">
-          <div class="team-member-photo"><img src="images/team/neshalini-sathiabalan.jpg" alt="Neshalini Sathiabalan" loading="lazy"></div>
+          <div class="team-member-photo"><img src="/images/team/neshalini-sathiabalan.jpg" alt="Neshalini Sathiabalan" loading="lazy"></div>
           <h4>Neshalini Sathiabalan</h4>
           <p>Clinical Research Coordinator</p>
         </div>
         <div class="team-member">
-          <div class="team-member-photo"><img src="images/team/siew-mei-lau.jpg" alt="Siew Mei Lau" loading="lazy"></div>
+          <div class="team-member-photo"><img src="/images/team/siew-mei-lau.jpg" alt="Siew Mei Lau" loading="lazy"></div>
           <h4>Siew Mei Lau</h4>
           <p>Clinical Research Coordinator</p>
         </div>
@@ -243,42 +239,3 @@
       <a href="https://app.n1.care" class="btn btn-primary">Get started</a>
     </div>
   </section>
-
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-inner">
-        <div class="footer-brand">
-          <div class="nav-logo"><img src="images/n1-logo.png" alt="n1.care"></div>
-          <p>AI-powered clinical health intelligence — turning medical records into actionable insights for clinicians and their patients.</p>
-        </div>
-        <div class="footer-links">
-          <div class="footer-col">
-            <h4>Product</h4>
-            <a href="how-it-works.html">How It Works</a>
-            <a href="health-report.html">Reports</a>
-            <a href="pricing.html">Pricing</a>
-            <a href="https://app.n1.care">Get Started</a>
-          </div>
-          <div class="footer-col">
-            <h4>Company</h4>
-            <a href="about.html">About</a>
-            <a href="contact.html">Contact</a>
-            <a href="faq.html">FAQ</a>
-          </div>
-          <div class="footer-col">
-            <h4>Legal</h4>
-            <a href="privacy.html">Privacy Policy</a>
-            <a href="terms.html">Terms of Service</a>
-          </div>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        &copy; 2026 n1.care. All rights reserved.
-      </div>
-    </div>
-  </footer>
-
-  <script src="main.js"></script>
-</body>
-</html>

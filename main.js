@@ -33,10 +33,10 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // --- Active Nav Link ---
-  const currentPage = location.pathname.split('/').pop() || 'index.html';
+  const path = location.pathname.replace(/\/+$/, '') || '/';
   document.querySelectorAll('.nav-links a:not(.btn)').forEach(a => {
     const href = a.getAttribute('href');
-    if (href === currentPage || (currentPage === 'index.html' && href === 'index.html')) {
+    if (href === path || (path === '' && href === '/')) {
       a.classList.add('active');
     }
   });

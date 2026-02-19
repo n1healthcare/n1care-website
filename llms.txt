@@ -1,0 +1,49 @@
+# n1.care
+
+> AI-powered clinical health intelligence platform for licensed healthcare professionals.
+
+n1.care transforms unstructured medical records into structured, actionable health intelligence. Clinicians upload patient records (PDFs, imaging reports, genetics reports, clinical notes), and the AI pipeline extracts biomarkers, diagnoses, procedures, and genetic data into four structured categories. Multiple AI-powered report types are generated for different clinical needs.
+
+The platform is designed exclusively for licensed healthcare professionals. AI provides draft outputs that are fully editable — the clinician always has final authority. Nothing reaches a patient without explicit clinician sign-off.
+
+## Key Facts
+
+- Company: N1 Research, LLC (Dover, Delaware, USA)
+- Founded by: Jean-Yves Sireau
+- Platform: https://app.n1.care
+- Pricing: Usage-based, pay-as-you-go (no subscriptions, credits never expire)
+- Compliance: HIPAA compliant, encrypted at rest (XChaCha20-Poly1305) and in transit (TLS), MFA, audit logging
+- Team: 25 people — clinicians, AI engineers, data scientists, and health optimisation experts
+
+## Products
+
+- [How It Works](https://n1.care/how-it-works): 5-stage AI pipeline — Upload, Parse, Extract, Enrich, Report
+- [Reports & Data](https://n1.care/health-report): Three report types — Precision Clinical Health Analysis, Longitudinal Biomarker Profile, Advanced Multi-Perspective Review
+- [Pricing](https://n1.care/pricing): Usage-based pricing with no subscriptions or monthly fees
+
+## Report Types
+
+1. **Precision Clinical Health Analysis**: Comprehensive AI-powered analysis with clinical insights, evidence-based recommendations, health storylines, root cause analysis, biomarker trends, therapeutic protocols, and longevity assessment
+2. **Longitudinal Biomarker Profile**: Visual and narrative representation of health trends with interactive charts, sparklines, and analytics across biomarker categories
+3. **Advanced Multi-Perspective Review**: Multi-agent AI analysis providing diverse clinical specialist perspectives (Cardiologist, Nephrologist, Endocrinologist, etc.) in PDF format
+
+## Data Categories
+
+The platform extracts and structures data into four categories:
+- Biomarkers (lab values, reference ranges, trends)
+- Diagnoses (clinical conditions, ICD coding)
+- Procedures (medical procedures, imaging, interventions)
+- Genetics (genetic variants, pharmacogenomics)
+
+## Company
+
+- [About](https://n1.care/about): Cross-disciplinary team and core values
+- [FAQ](https://n1.care/faq): Common questions about the platform
+- [Contact](https://n1.care/contact): Get started or ask questions
+- [Privacy Policy](https://n1.care/privacy): Data handling and HIPAA compliance
+- [Terms of Service](https://n1.care/terms): Terms governing platform use
+
+## Example Reports
+
+- [Precision Clinical Health Analysis Example](https://n1.care/examples/precision-clinical-health-analysis)
+- [Longitudinal Biomarker Profile Example](https://n1.care/examples/longitudinal-biomarker-profile)
