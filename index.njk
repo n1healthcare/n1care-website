@@ -859,20 +859,20 @@ headExtra: |
 
         <div class="teaser-visual">
           <svg class="teaser-svg" viewBox="0 10 480 280" fill="none">
-            <path d="M30 205 L170 275 L310 205 L170 135 Z" fill="#f59e0b08" stroke="#f59e0b" stroke-width="1.5" opacity="0.7"/>
-            <path d="M30 168 L170 238 L310 168 L170 98 Z" fill="#16a34a08" stroke="#16a34a" stroke-width="1.5" opacity="0.7"/>
-            <path d="M30 131 L170 201 L310 131 L170 61 Z" fill="#6366f108" stroke="#6366f1" stroke-width="1.5" opacity="0.7"/>
-            <path d="M30 94 L170 164 L310 94 L170 24 Z" fill="#0d737710" stroke="#0d7377" stroke-width="1.5" opacity="0.8"/>
-            <line x1="170" y1="24" x2="170" y2="275" stroke="#22303015" stroke-width="1" stroke-dasharray="4"/>
-            <circle cx="170" cy="24" r="4" fill="#0d7377" opacity="0.7"><animate attributeName="cy" values="24;275;24" dur="6s" repeatCount="indefinite"/><animate attributeName="fill" values="#0d7377;#6366f1;#16a34a;#f59e0b;#16a34a;#6366f1;#0d7377" dur="6s" repeatCount="indefinite"/></circle>
-            <line x1="310" y1="94" x2="335" y2="94" stroke="#0d737740" stroke-width="1"/>
-            <text x="342" y="99" fill="#0d7377" font-size="14" font-weight="600">Clinicians</text>
-            <line x1="310" y1="131" x2="335" y2="131" stroke="#6366f140" stroke-width="1"/>
-            <text x="342" y="136" fill="#6366f1" font-size="14" font-weight="600">AI Engineers</text>
-            <line x1="310" y1="168" x2="335" y2="168" stroke="#16a34a40" stroke-width="1"/>
-            <text x="342" y="173" fill="#16a34a" font-size="14" font-weight="600">Data Scientists</text>
-            <line x1="310" y1="205" x2="335" y2="205" stroke="#f59e0b40" stroke-width="1"/>
-            <text x="342" y="210" fill="#f59e0b" font-size="14" font-weight="600">Health Optimisation</text>
+            <path class="teaser-layer teaser-layer--optimisation" d="M30 205 L170 275 L310 205 L170 135 Z"/>
+            <path class="teaser-layer teaser-layer--scientists" d="M30 168 L170 238 L310 168 L170 98 Z"/>
+            <path class="teaser-layer teaser-layer--engineers" d="M30 131 L170 201 L310 131 L170 61 Z"/>
+            <path class="teaser-layer teaser-layer--clinicians" d="M30 94 L170 164 L310 94 L170 24 Z"/>
+            <line class="teaser-axis" x1="170" y1="24" x2="170" y2="275"/>
+            <circle class="teaser-dot" cx="170" cy="24" r="4"><animate attributeName="cy" values="24;275;24" dur="6s" repeatCount="indefinite"/><animate attributeName="fill" values="#0d7377;#6366f1;#16a34a;#f59e0b;#16a34a;#6366f1;#0d7377" dur="6s" repeatCount="indefinite"/></circle>
+            <line class="teaser-connector teaser-connector--clinicians" x1="310" y1="94" x2="335" y2="94"/>
+            <text class="teaser-label teaser-label--clinicians" x="342" y="99">Clinicians</text>
+            <line class="teaser-connector teaser-connector--engineers" x1="310" y1="131" x2="335" y2="131"/>
+            <text class="teaser-label teaser-label--engineers" x="342" y="136">AI Engineers</text>
+            <line class="teaser-connector teaser-connector--scientists" x1="310" y1="168" x2="335" y2="168"/>
+            <text class="teaser-label teaser-label--scientists" x="342" y="173">Data Scientists</text>
+            <line class="teaser-connector teaser-connector--optimisation" x1="310" y1="205" x2="335" y2="205"/>
+            <text class="teaser-label teaser-label--optimisation" x="342" y="210">Health Optimisation</text>
           </svg>
         </div>
 
