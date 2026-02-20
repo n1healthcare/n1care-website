@@ -9,7 +9,10 @@
         "/contact/",
         "/how-it-works/",
         "/health-report/"
-      ]
+      ],
+      "settings": {
+        "chromeFlags": "--headless=new --no-sandbox"
+      }
     },
     "upload": {
       "target": "filesystem",
