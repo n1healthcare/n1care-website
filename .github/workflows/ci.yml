@@ -33,9 +33,9 @@ jobs:
           name: site
           path: _site/
 
-      - uses: nickmccurdy/html-validator-action@v2.0.0
+      - uses: Cyb3r-Jak3/html5validator-action@v7.2.0
         with:
-          files: _site/**/index.html
+          root: _site/
 
   lighthouse:
     needs: build
@@ -52,4 +52,3 @@ jobs:
         with:
           configPath: lighthouserc.json
           uploadArtifacts: true
-          temporaryPublicStorage: true
