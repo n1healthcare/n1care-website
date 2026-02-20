@@ -96,11 +96,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // --- Process Animation (Upload → Extract → Report → Success) ---
   let processTimer = null;
-  const isMobile = window.innerWidth <= 768;
-  const STAGE_DURATION = isMobile ? 2800 : 3800; // faster on mobile
 
   function startProcessAnim() {
     stopProcessAnim();
+    const isMobile = window.innerWidth <= 768;
+    const STAGE_DURATION = isMobile ? 2800 : 3800; // faster on mobile
     const container = document.querySelector('.hero-vis--process');
     if (!container) return;
 
