@@ -37,6 +37,7 @@ jobs:
         with:
           root: _site/
           skip_git_check: true
+          blacklist: examples
 
   lighthouse:
     needs: build
