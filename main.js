@@ -15,20 +15,50 @@ document.addEventListener('DOMContentLoaded', () => {
     onScroll();
   }
 
-  // --- Mobile Nav Toggle ---
+  // --- Mobile Nav Toggle (with scroll-lock, backdrop, ESC) ---
   const toggle = document.querySelector('.nav-toggle');
   const links = document.querySelector('.nav-links');
+  const backdrop = document.querySelector('.nav-backdrop');
+
+  function closeNav() {
+    if (!toggle || !links) return;
+    toggle.classList.remove('open');
+    links.classList.remove('open');
+    document.body.classList.remove('nav-open');
+    if (nav) nav.classList.remove('nav-open');
+    if (backdrop) backdrop.classList.remove('active');
+  }
+
+  function openNav() {
+    if (!toggle || !links) return;
+    toggle.classList.add('open');
+    links.classList.add('open');
+    document.body.classList.add('nav-open');
+    if (nav) nav.classList.add('nav-open');
+    if (backdrop) backdrop.classList.add('active');
+  }
+
   if (toggle && links) {
     toggle.addEventListener('click', () => {
-      toggle.classList.toggle('open');
-      links.classList.toggle('open');
+      if (links.classList.contains('open')) {
+        closeNav();
+      } else {
+        openNav();
+      }
     });
 
     links.querySelectorAll('a').forEach(a => {
-      a.addEventListener('click', () => {
-        toggle.classList.remove('open');
-        links.classList.remove('open');
-      });
+      a.addEventListener('click', closeNav);
+    });
+
+    if (backdrop) {
+      backdrop.addEventListener('click', closeNav);
+    }
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && links.classList.contains('open')) {
+        closeNav();
+      }
     });
   }
 
@@ -66,7 +96,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // --- Process Animation (Upload → Extract → Report → Success) ---
   let processTimer = null;
-  const STAGE_DURATION = 3800; // ms per stage
+  const isMobile = window.innerWidth <= 768;
+  const STAGE_DURATION = isMobile ? 2800 : 3800; // faster on mobile
 
   function startProcessAnim() {
     stopProcessAnim();
@@ -147,9 +178,11 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // --- Mouse tracking for Tide parallax ---
+  // Disable on touch devices and reduced motion
+  const isTouch = window.matchMedia('(pointer: coarse)').matches;
   let targetX = 0, targetY = 0, curX = 0, curY = 0;
 
-  if (hero) {
+  if (hero && !isTouch) {
     hero.addEventListener('mousemove', (e) => {
       const rect = hero.getBoundingClientRect();
       targetX = (e.clientX - rect.left) - rect.width / 2;
@@ -178,7 +211,7 @@ document.addEventListener('DOMContentLoaded', () => {
     requestAnimationFrame(tick);
   }
 
-  if (hero && !reducedMotion) tick();
+  if (hero && !reducedMotion && !isTouch) tick();
 
   // --- Scroll Reveal (IntersectionObserver) ---
   const reveals = document.querySelectorAll('.reveal, .reveal-stagger');

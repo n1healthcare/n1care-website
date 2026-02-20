@@ -163,22 +163,22 @@ headExtra: |
                     Extracting clinical data...
                   </div>
                   <div class="process-data-row process-data-row--1">
-                    <span class="process-data-dot" style="background:#16a34a"></span>
+                    <span class="process-data-dot process-data-dot--green"></span>
                     <span class="process-data-name">HbA1c</span>
                     <strong class="snapshot-green">5.4%</strong>
                   </div>
                   <div class="process-data-row process-data-row--2">
-                    <span class="process-data-dot" style="background:#f59e0b"></span>
+                    <span class="process-data-dot process-data-dot--amber"></span>
                     <span class="process-data-name">Glucose</span>
                     <strong class="snapshot-amber">108 mg/dL</strong>
                   </div>
                   <div class="process-data-row process-data-row--3">
-                    <span class="process-data-dot" style="background:#ef4444"></span>
+                    <span class="process-data-dot process-data-dot--red"></span>
                     <span class="process-data-name">TSH</span>
                     <strong class="snapshot-red">6.2 mIU/L</strong>
                   </div>
                   <div class="process-data-row process-data-row--4">
-                    <span class="process-data-dot" style="background:#16a34a"></span>
+                    <span class="process-data-dot process-data-dot--green"></span>
                     <span class="process-data-name">Vitamin D</span>
                     <strong class="snapshot-green">72 ng/mL</strong>
                   </div>
@@ -203,7 +203,7 @@ headExtra: |
                       <span class="process-report-stat-label">Flagged</span>
                     </div>
                     <div class="process-report-stat report-anim report-anim--stat3">
-                      <span class="process-report-stat-val" style="color:#6366f1">6</span>
+                      <span class="process-report-stat-val snapshot-indigo">6</span>
                       <span class="process-report-stat-label">Diagnoses</span>
                     </div>
                   </div>
@@ -232,9 +232,9 @@ headExtra: |
               <circle cx="80" cy="80" r="42" stroke="#ef4444" stroke-width="8" fill="none" stroke-dasharray="264" stroke-dashoffset="132" stroke-linecap="round" class="ring-fill ring-fill--3"/>
             </svg>
             <div class="ring-labels">
-              <span class="ring-label" style="color:#10b981">80% In Range</span>
-              <span class="ring-label" style="color:#f59e0b">70% Tracked</span>
-              <span class="ring-label" style="color:#ef4444">50% Reviewed</span>
+              <span class="ring-label ring-label--green">80% In Range</span>
+              <span class="ring-label ring-label--amber">70% Tracked</span>
+              <span class="ring-label ring-label--red">50% Reviewed</span>
             </div>
           </div>
         </div>
@@ -411,7 +411,7 @@ headExtra: |
             <div class="platform-app">
               <!-- Sidebar -->
               <div class="platform-sidebar">
-                <div class="platform-sidebar-logo"><img src="/images/n1-logo.png" alt="n1.care" style="height: 20px; width: auto;"></div>
+                <div class="platform-sidebar-logo"><img src="/images/n1-logo.png" alt="n1.care"></div>
                 <div class="platform-sidebar-section">Overview</div>
                 <div class="platform-sidebar-item active">
                   <svg viewBox="0 0 16 16" fill="none"><rect x="1" y="1" width="6" height="6" rx="1" stroke="currentColor" stroke-width="1.2"/><rect x="9" y="1" width="6" height="6" rx="1" stroke="currentColor" stroke-width="1.2"/><rect x="1" y="9" width="6" height="6" rx="1" stroke="currentColor" stroke-width="1.2"/><rect x="9" y="9" width="6" height="6" rx="1" stroke="currentColor" stroke-width="1.2"/></svg>
@@ -458,12 +458,12 @@ headExtra: |
                 </div>
                 <!-- Stat cards -->
                 <div class="platform-stats">
-                  <div class="platform-stat" style="background: #dbeafe;"><div class="platform-stat-label" style="color: #1e40af;">Records</div><div class="platform-stat-value" style="color: #1e40af;">12</div></div>
-                  <div class="platform-stat" style="background: #f3e8ff;"><div class="platform-stat-label" style="color: #9333ea;">Reports</div><div class="platform-stat-value" style="color: #9333ea;">4</div></div>
-                  <div class="platform-stat" style="background: #d1fae5;"><div class="platform-stat-label" style="color: #059669;">Biomarkers</div><div class="platform-stat-value" style="color: #059669;">847</div></div>
-                  <div class="platform-stat" style="background: #fee2e2;"><div class="platform-stat-label" style="color: #dc2626;">Diagnoses</div><div class="platform-stat-value" style="color: #dc2626;">6</div></div>
-                  <div class="platform-stat" style="background: #fef3c7;"><div class="platform-stat-label" style="color: #d97706;">Procedures</div><div class="platform-stat-value" style="color: #d97706;">3</div></div>
-                  <div class="platform-stat" style="background: #e0e7ff;"><div class="platform-stat-label" style="color: #4f46e5;">Genetics</div><div class="platform-stat-value" style="color: #4f46e5;">18</div></div>
+                  <div class="platform-stat platform-stat--blue"><div class="platform-stat-label">Records</div><div class="platform-stat-value">12</div></div>
+                  <div class="platform-stat platform-stat--purple"><div class="platform-stat-label">Reports</div><div class="platform-stat-value">4</div></div>
+                  <div class="platform-stat platform-stat--green"><div class="platform-stat-label">Biomarkers</div><div class="platform-stat-value">847</div></div>
+                  <div class="platform-stat platform-stat--red"><div class="platform-stat-label">Diagnoses</div><div class="platform-stat-value">6</div></div>
+                  <div class="platform-stat platform-stat--yellow"><div class="platform-stat-label">Procedures</div><div class="platform-stat-value">3</div></div>
+                  <div class="platform-stat platform-stat--indigo"><div class="platform-stat-label">Genetics</div><div class="platform-stat-value">18</div></div>
                 </div>
                 <!-- Quick actions -->
                 <div class="platform-quick-actions">
@@ -513,13 +513,13 @@ headExtra: |
             </div>
             <div class="platform-app">
               <div class="platform-sidebar platform-sidebar--collapsed">
-                <div class="platform-sidebar-logo"><img src="/images/n1-logo.png" alt="n1.care" style="height: 20px; width: auto; object-fit: cover; object-position: left; max-width: 24px;"></div>
+                <div class="platform-sidebar-logo"><img src="/images/n1-logo.png" alt="n1.care"></div>
                 <div class="platform-sidebar-item"><svg viewBox="0 0 16 16" fill="none"><rect x="1" y="1" width="6" height="6" rx="1" stroke="currentColor" stroke-width="1.2"/><rect x="9" y="1" width="6" height="6" rx="1" stroke="currentColor" stroke-width="1.2"/><rect x="1" y="9" width="6" height="6" rx="1" stroke="currentColor" stroke-width="1.2"/><rect x="9" y="9" width="6" height="6" rx="1" stroke="currentColor" stroke-width="1.2"/></svg></div>
                 <div class="platform-sidebar-item active"><svg viewBox="0 0 16 16" fill="none"><path d="M2 3h12M2 8h12M2 13h8" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg></div>
                 <div class="platform-sidebar-item"><svg viewBox="0 0 16 16" fill="none"><rect x="2" y="1" width="12" height="14" rx="1.5" stroke="currentColor" stroke-width="1.2"/><path d="M5 5h6M5 8h4M5 11h5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg></div>
                 <div class="platform-sidebar-item"><svg viewBox="0 0 16 16" fill="none"><path d="M2 12l3-6 3 3 3-8 3 5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
                 <div class="platform-sidebar-spacer"></div>
-                <div class="platform-sidebar-avatar" style="margin: 0 auto;">DR</div>
+                <div class="platform-sidebar-avatar platform-sidebar-avatar--centered">DR</div>
               </div>
               <div class="platform-main">
                 <div class="platform-main-header">
@@ -588,13 +588,13 @@ headExtra: |
             </div>
             <div class="platform-app">
               <div class="platform-sidebar platform-sidebar--collapsed">
-                <div class="platform-sidebar-logo"><img src="/images/n1-logo.png" alt="n1.care" style="height: 20px; width: auto; object-fit: cover; object-position: left; max-width: 24px;"></div>
+                <div class="platform-sidebar-logo"><img src="/images/n1-logo.png" alt="n1.care"></div>
                 <div class="platform-sidebar-item"><svg viewBox="0 0 16 16" fill="none"><rect x="1" y="1" width="6" height="6" rx="1" stroke="currentColor" stroke-width="1.2"/><rect x="9" y="1" width="6" height="6" rx="1" stroke="currentColor" stroke-width="1.2"/><rect x="1" y="9" width="6" height="6" rx="1" stroke="currentColor" stroke-width="1.2"/><rect x="9" y="9" width="6" height="6" rx="1" stroke="currentColor" stroke-width="1.2"/></svg></div>
                 <div class="platform-sidebar-item"><svg viewBox="0 0 16 16" fill="none"><path d="M2 3h12M2 8h12M2 13h8" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg></div>
                 <div class="platform-sidebar-item"><svg viewBox="0 0 16 16" fill="none"><rect x="2" y="1" width="12" height="14" rx="1.5" stroke="currentColor" stroke-width="1.2"/><path d="M5 5h6M5 8h4M5 11h5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg></div>
                 <div class="platform-sidebar-item active"><svg viewBox="0 0 16 16" fill="none"><path d="M2 12l3-6 3 3 3-8 3 5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
                 <div class="platform-sidebar-spacer"></div>
-                <div class="platform-sidebar-avatar" style="margin: 0 auto;">DR</div>
+                <div class="platform-sidebar-avatar platform-sidebar-avatar--centered">DR</div>
               </div>
               <div class="platform-main">
                 <div class="platform-main-header">
@@ -677,13 +677,13 @@ headExtra: |
             </div>
             <div class="platform-app">
               <div class="platform-sidebar platform-sidebar--collapsed">
-                <div class="platform-sidebar-logo"><img src="/images/n1-logo.png" alt="n1.care" style="height: 20px; width: auto; object-fit: cover; object-position: left; max-width: 24px;"></div>
+                <div class="platform-sidebar-logo"><img src="/images/n1-logo.png" alt="n1.care"></div>
                 <div class="platform-sidebar-item"><svg viewBox="0 0 16 16" fill="none"><rect x="1" y="1" width="6" height="6" rx="1" stroke="currentColor" stroke-width="1.2"/><rect x="9" y="1" width="6" height="6" rx="1" stroke="currentColor" stroke-width="1.2"/><rect x="1" y="9" width="6" height="6" rx="1" stroke="currentColor" stroke-width="1.2"/><rect x="9" y="9" width="6" height="6" rx="1" stroke="currentColor" stroke-width="1.2"/></svg></div>
                 <div class="platform-sidebar-item"><svg viewBox="0 0 16 16" fill="none"><path d="M2 3h12M2 8h12M2 13h8" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg></div>
                 <div class="platform-sidebar-item active"><svg viewBox="0 0 16 16" fill="none"><rect x="2" y="1" width="12" height="14" rx="1.5" stroke="currentColor" stroke-width="1.2"/><path d="M5 5h6M5 8h4M5 11h5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg></div>
                 <div class="platform-sidebar-item"><svg viewBox="0 0 16 16" fill="none"><path d="M2 12l3-6 3 3 3-8 3 5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
                 <div class="platform-sidebar-spacer"></div>
-                <div class="platform-sidebar-avatar" style="margin: 0 auto;">DR</div>
+                <div class="platform-sidebar-avatar platform-sidebar-avatar--centered">DR</div>
               </div>
               <div class="platform-main">
                 <div class="platform-main-header">
@@ -721,7 +721,7 @@ headExtra: |
                   </div>
                 </div>
                 <!-- Generated reports table -->
-                <div class="platform-section-header" style="margin-top: 1.25rem;">
+                <div class="platform-section-header mt-3">
                   <span>Generated Reports</span>
                 </div>
                 <table class="platform-mock-table">
@@ -730,17 +730,17 @@ headExtra: |
                   </thead>
                   <tbody>
                     <tr>
-                      <td class="platform-td-name">Precision Clinical Analysis <span class="platform-badge platform-badge--muted" style="margin-left: 4px; font-size: 0.55rem;">CC</span></td>
+                      <td class="platform-td-name">Precision Clinical Analysis <span class="platform-badge platform-badge--muted platform-badge--inline">CC</span></td>
                       <td class="platform-td-muted">Feb 14, 2026</td>
                       <td><span class="platform-badge platform-badge--green">Complete</span></td>
                     </tr>
                     <tr>
-                      <td class="platform-td-name">Executive Health Narrative <span class="platform-badge platform-badge--muted" style="margin-left: 4px; font-size: 0.55rem;">EasyCHR</span></td>
+                      <td class="platform-td-name">Executive Health Narrative <span class="platform-badge platform-badge--muted platform-badge--inline">EasyCHR</span></td>
                       <td class="platform-td-muted">Feb 12, 2026</td>
                       <td><span class="platform-badge platform-badge--purple">Generating 67%</span></td>
                     </tr>
                     <tr>
-                      <td class="platform-td-name">Longitudinal Biomarker Profile <span class="platform-badge platform-badge--muted" style="margin-left: 4px; font-size: 0.55rem;">Graphs</span></td>
+                      <td class="platform-td-name">Longitudinal Biomarker Profile <span class="platform-badge platform-badge--muted platform-badge--inline">Graphs</span></td>
                       <td class="platform-td-muted">Feb 10, 2026</td>
                       <td><span class="platform-badge platform-badge--green">Complete</span></td>
                     </tr>
@@ -768,12 +768,12 @@ headExtra: |
           <!-- Mini snapshot: SBAR + metrics -->
           <div class="mini-snapshot">
             <div class="mini-snapshot-row">
-              <div class="mini-sbar"><span class="mini-dot" style="background:#DC2626"></span><strong>S</strong> Multi-system dysfunction</div>
-              <div class="mini-sbar"><span class="mini-dot" style="background:#D97706"></span><strong>B</strong> 10-year longitudinal data</div>
+              <div class="mini-sbar"><span class="mini-dot mini-dot--red"></span><strong>S</strong> Multi-system dysfunction</div>
+              <div class="mini-sbar"><span class="mini-dot mini-dot--amber"></span><strong>B</strong> 10-year longitudinal data</div>
             </div>
             <div class="mini-snapshot-row">
-              <div class="mini-sbar"><span class="mini-dot" style="background:#16A34A"></span><strong>A</strong> Infection-driven overload</div>
-              <div class="mini-sbar"><span class="mini-dot" style="background:var(--accent)"></span><strong>R</strong> GI evaluation, consult</div>
+              <div class="mini-sbar"><span class="mini-dot mini-dot--green"></span><strong>A</strong> Infection-driven overload</div>
+              <div class="mini-sbar"><span class="mini-dot mini-dot--teal"></span><strong>R</strong> GI evaluation, consult</div>
             </div>
             <div class="mini-metrics">
               <span class="mini-metric"><em>Ferritin</em> <strong class="snapshot-red">19</strong></span>
@@ -783,7 +783,7 @@ headExtra: |
           </div>
           <h4>Precision Clinical Health Analysis</h4>
           <p>Comprehensive AI-powered health analysis with detailed clinical insights and evidence-based recommendations.</p>
-          <a href="/health-report" class="btn btn-ghost" style="margin-top: 0.5rem;">See full report</a>
+          <a href="/health-report" class="btn btn-ghost mt-1">See full report</a>
         </div>
         <div class="chapter-card">
           <!-- Mini snapshot: sparkline charts -->
@@ -809,7 +809,7 @@ headExtra: |
           </div>
           <h4>Longitudinal Biomarker Profile</h4>
           <p>Visual and narrative representation of health data trends with interactive charts and analytics.</p>
-          <a href="/health-report" class="btn btn-ghost" style="margin-top: 0.5rem;">See full report</a>
+          <a href="/health-report" class="btn btn-ghost mt-1">See full report</a>
         </div>
         <div class="chapter-card">
           <!-- Mini snapshot: PDF multi-perspective -->
@@ -826,10 +826,10 @@ headExtra: |
           </div>
           <h4>Advanced Multi-Perspective Review</h4>
           <p>Multi-agent AI analysis providing diverse clinical perspectives on your health data.</p>
-          <a href="/health-report" class="btn btn-ghost" style="margin-top: 0.5rem;">See full report</a>
+          <a href="/health-report" class="btn btn-ghost mt-1">See full report</a>
         </div>
       </div>
-      <div style="margin-top: 3rem;" class="reveal">
+      <div class="mt-6 reveal">
         <a href="/health-report" class="btn btn-ghost">Learn more about reports</a>
       </div>
     </div>
@@ -852,9 +852,9 @@ headExtra: |
         <div>
           <span class="section-label">About n1.care</span>
           <h2>Cross-disciplinary.<br>Science-driven.</h2>
-          <p class="text-muted" style="margin-top: 1rem;">We are a cross-disciplinary team of clinicians, data scientists, AI engineers, and health optimisation experts. We are passionate about precision health, and we believe the best medicine is proactive, not reactive.</p>
-          <p class="text-muted" style="margin-top: 1rem;">Our team has trained at leading institutions, worked across multiple domains of longevity, diagnostics, clinical decision-making, and AI development. Everything we build is grounded in rigorous science and tested logic.</p>
-          <a href="/about" class="btn btn-ghost" style="margin-top: 1.5rem;">Learn about us</a>
+          <p class="text-muted mt-2">We are a cross-disciplinary team of clinicians, data scientists, AI engineers, and health optimisation experts. We are passionate about precision health, and we believe the best medicine is proactive, not reactive.</p>
+          <p class="text-muted mt-2">Our team has trained at leading institutions, worked across multiple domains of longevity, diagnostics, clinical decision-making, and AI development. Everything we build is grounded in rigorous science and tested logic.</p>
+          <a href="/about" class="btn btn-ghost mt-3">Learn about us</a>
         </div>
 
         <div class="teaser-visual">
@@ -883,10 +883,10 @@ headExtra: |
   <!-- Trust & Security -->
   <section class="trust-section">
     <div class="container">
-      <div class="section-header reveal" style="text-align: center;">
+      <div class="section-header reveal text-center">
         <span class="section-label">Security & Compliance</span>
         <h2>Built for clinical-grade trust.</h2>
-        <p class="text-lg" style="margin: 1rem auto 0;">Your patients' data demands the highest standards. We treat security not as a checkbox but as a foundational design principle.</p>
+        <p class="text-lg mt-2 mx-auto">Your patients' data demands the highest standards. We treat security not as a checkbox but as a foundational design principle.</p>
       </div>
 
       <div class="trust-badges reveal-stagger">
@@ -940,11 +940,11 @@ headExtra: |
   <!-- FAQ -->
   <section>
     <div class="container">
-      <div class="section-header reveal" style="text-align: center;">
+      <div class="section-header reveal text-center">
         <span class="section-label">FAQ</span>
         <h2>Common questions.</h2>
       </div>
-      <div class="faq-list" style="margin-bottom: 2.5rem;">
+      <div class="faq-list mt-5">
 
         <div class="faq-item reveal">
           <button class="faq-question" aria-expanded="false">
@@ -992,12 +992,12 @@ headExtra: |
             <svg viewBox="0 0 24 24" fill="none" width="20" height="20"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </button>
           <div class="faq-answer">
-            <p>Simply sign up at <a href="https://app.n1.care" style="color: var(--accent); font-weight: 500;">app.n1.care</a> with your medical credentials. Once verified, you can start uploading records and generating reports immediately.</p>
+            <p>Simply sign up at <a href="https://app.n1.care" class="faq-link">app.n1.care</a> with your medical credentials. Once verified, you can start uploading records and generating reports immediately.</p>
           </div>
         </div>
 
       </div>
-      <div style="text-align: center;" class="reveal">
+      <div class="text-center reveal">
         <a href="/faq" class="btn btn-ghost">View all FAQ</a>
       </div>
     </div>
