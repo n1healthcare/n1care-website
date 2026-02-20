@@ -49,11 +49,11 @@ headExtra: |
           <form id="contact-form">
             <div class="form-group">
               <label for="name">Full Name</label>
-              <input type="text" id="name" name="name" placeholder="Your name" required>
+              <input type="text" id="name" name="name" placeholder="Your name" required autocomplete="name">
             </div>
             <div class="form-group">
               <label for="email">Email</label>
-              <input type="email" id="email" name="email" placeholder="you@example.com" required>
+              <input type="email" id="email" name="email" placeholder="you@example.com" required inputmode="email" autocomplete="email">
             </div>
             <div class="form-group">
               <label for="type">I am a...</label>
@@ -102,8 +102,8 @@ headExtra: |
             <div class="label">Address</div>
             <p>N1 Research, LLC<br>1111B S Governors Ave STE 39520<br>Dover, DE 19904<br>USA</p>
           </div>
-          <div style="margin-top: 2rem; padding-top: 2rem; border-top: 1px solid var(--border);">
-            <p class="text-muted" style="font-size: 0.875rem; line-height: 1.7;">
+          <div class="contact-response-note">
+            <p class="text-muted">
               We typically respond within one business day.
             </p>
           </div>
