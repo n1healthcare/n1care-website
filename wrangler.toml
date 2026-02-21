@@ -6,7 +6,7 @@ directory = "./_site"
 
 # Production environment (main branch) -> n1.care
 [env.production]
-name = "n1-care-website-production"
+name = "n1care-website"
 
 # Staging environment (develop branch) -> workers.dev preview
 [env.staging]
