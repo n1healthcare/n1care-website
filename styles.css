@@ -4219,25 +4219,8 @@ body.nav-open {
     display: none;
   }
 
-  .platform-app {
-    grid-template-columns: 1fr;
-  }
-
-  .platform-sidebar,
-  .platform-sidebar--collapsed {
-    display: none;
-  }
-
-  .platform-main-header {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .platform-mock-table th:nth-child(2),
-  .platform-mock-table td:nth-child(2),
-  .platform-mock-table th:nth-child(3),
-  .platform-mock-table td:nth-child(3) {
-    display: none;
+  .platform-browser {
+    zoom: 0.55;
   }
 }
 
