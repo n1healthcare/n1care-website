@@ -4220,6 +4220,8 @@ body.nav-open {
   }
 
   .platform-browser {
+    /* zoom (not transform: scale) so the layout box shrinks — no margin hacks.
+       Standardised in CSS since Interop 2024; supported in all evergreen browsers. */
     zoom: 0.55;
   }
 }
